@@ -1,3 +1,28 @@
-h1 {
-    color: blue;
+.container {
+    margin-left: 20px;
 }
+
+#header {
+    margin-left: 0px;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: gray;
+}
+
+h1 {
+    display: inline;
+}
+
+p {
+    display: inline;
+}
+
+/*-----------FIRST PAGE-----------*/
+
+#serviceDescription {
+    width: 40%;
+    padding-top: 20%;
+}
+
+/*---------END FIRST PAGE---------*/
