@@ -1,3 +1,8 @@
+body {
+    background-image: url("../images/family-cooking.jpg");
+    background-size: 100%;
+ }
+
 .container {
     margin-left: 20px;
 }
@@ -14,15 +19,18 @@ h1 {
     display: inline;
 }
 
-p {
+#headerParagraph{
     display: inline;
+    margin-left: 30px;
 }
 
 /*-----------FIRST PAGE-----------*/
 
 #serviceDescription {
+    background: rgba(255, 255, 255, 0.7);
     width: 40%;
-    padding-top: 20%;
+    margin-top: 35%;
+    padding: 20px;
 }
 
 /*---------END FIRST PAGE---------*/
