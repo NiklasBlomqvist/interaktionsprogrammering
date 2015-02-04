@@ -31,12 +31,16 @@ var DinnerModel = function() {
 
 	//Returns all the dishes on the menu.
 	this.getFullMenu = function() {
-		//TODO Lab 2
+		var return_data = [this.starter, this.mainDish, this.dessert];
+	    return return_data;
 	}
 
 	//Returns all ingredients for all the dishes on the menu.
 	this.getAllIngredients = function() {
-		//TODO Lab 2
+		var return_data = [];
+		return_data.push(this.starter.ingredients);
+		return_data.push(this.mainDish.ingredients);
+		return_data.push(this.dessert.ingredients);
 	}
 
 	//Returns the total price of the menu (all the ingredients multiplied by number of guests).
