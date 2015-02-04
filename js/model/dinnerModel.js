@@ -4,7 +4,9 @@ var DinnerModel = function() {
 	//TODO Lab 2 implement the data structure that will hold number of guest
 	// and selected dinner options for dinner menu
     this.numberOfGuests = 0;
-
+    this.starter;
+    this.mainDish;
+    this.dessert;
 
 
 	this.setNumberOfGuests = function(num) {
@@ -18,7 +20,13 @@ var DinnerModel = function() {
 
 	//Returns the dish that is on the menu for selected type 
 	this.getSelectedDish = function(type) {
-		//TODO Lab 2
+		if (type === 'starter') {
+            return this.starter;		
+		} else if (type === 'main dish') {
+            return this.mainDish;		
+		} else if (type === 'dessert') {
+            return this.dessert;		
+		}		
 	}
 
 	//Returns all the dishes on the menu.
