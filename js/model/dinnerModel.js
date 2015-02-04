@@ -8,13 +8,11 @@ var DinnerModel = function() {
 
 
 	this.setNumberOfGuests = function(num) {
-		//TODO Lab 2
         this.numberOfGuests = num;
 	}
 
 	// should return 
 	this.getNumberOfGuests = function() {
-		//TODO Lab 2
         return this.numberOfGuests;
 	}
 
