@@ -91,3 +91,54 @@ div #myDinnerView {
 }
 
 /*---------END selectDishView---------*/
+
+
+/*---------START distListView---------*/
+
+#dishListView {
+    margin-left: 20%;
+    padding: 20px;
+    background-color: yellow;
+
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+
+}
+
+#dishListTable {
+    margin-left: 30px;
+
+     
+}
+
+.dishImages {
+    width: 140px;
+    height: 120px;
+}
+
+.dishName {
+    background-color: #C8D6E3;
+}
+
+.dishInTable {
+    border: 1px solid black;
+    table-layout: fixed;
+    width: 160px; /* Important */
+    
+}
+
+.dishImageAndText {
+    border: 1px solid black;
+}
+
+td .dishDescription {
+
+    border: 3px solid red;
+    width: 50px;
+    height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+/*---------END distListView---------*/
