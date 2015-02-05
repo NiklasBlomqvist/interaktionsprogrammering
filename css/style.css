@@ -38,3 +38,19 @@ div #firstPage {
 }
 
 /*---------END FIRST PAGE---------*/
+
+
+/*---------START mydinnerView---------*/
+
+div #myDinnerView {
+    border: 2px solid black;
+    padding: 20px;
+    margin-right: 80%;
+}
+
+#spinner {
+    margin-left: 12px;
+}
+
+
+/*---------END myDinnerView---------*/
