@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/family-cooking.jpg");
+    /* background-image: url("../images/family-cooking.jpg"); */
     background-size: 100%;
  }
 
@@ -25,6 +25,10 @@ h1 {
 }
 
 /*-----------FIRST PAGE-----------*/
+
+div #firstPage {
+    display: none;
+}
 
 #serviceDescription {
     background: rgba(255, 255, 255, 0.7);
