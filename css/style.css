@@ -23,6 +23,10 @@ h1 {
     display: inline;
 }
 
+hr {
+    border-top: 1px solid black;
+}
+
 #headerParagraph{
     display: inline;
     margin-left: 30px;
@@ -49,7 +53,8 @@ div #firstPage {
 div #myDinnerView {
     border: 2px solid black;
     padding: 20px;
-    margin-right: 80%;
+    width: 20%;
+    float: left;
 }
 
 #doubleBorderRow {
@@ -62,24 +67,27 @@ div #myDinnerView {
     text-align: right;
 }
 
-#forceLength {
-    position: relative;
-    
-}
-
-td {
-    padding-right: 25px;
-}
-
 #addedDishes {
 
 }
-
-
 
 #spinner {
     margin-left: 12px;
 }
 
-
 /*---------END myDinnerView---------*/
+
+
+/*---------START selectDishView---------*/
+
+#selectDishView{
+    border: 2px solid black;
+    padding: 20px;
+    margin-left: 20%;
+    height: 150px;
+    background-color: #FFCC80;
+
+
+}
+
+/*---------END selectDishView---------*/

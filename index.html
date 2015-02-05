@@ -11,6 +11,23 @@
     <!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+    <script>
+    $(function(){
+        $(".dropdown-menu li a").click(function(){
+            $(".btn:first-child").text($(this).text());
+            $(".btn:first-child").val($(this).text());
+
+
+        });
+    });
+    </script>
+
+
   </head>
   <body>
     <div id="header">
@@ -59,6 +76,32 @@
 
         <!-- SELECT DISH VIEW -->
         <div id="selectDishView">
+            <p> SELECT DISH</p>
+            <hr>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Enter key words">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-danger">search</button>
+                    </span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+           
+  
+            <!-- Split button dropdown -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-default">Main</button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Starter</a></li>
+                    <li><a href="#">Main</a></li>
+                    <li><a href="#">Dessert</a></li>
+                </ul>
+            </div>
+
         </div>
 
         <!-- DISH LIST VIEW -->
@@ -95,11 +138,6 @@
 		    </div>-->
 
 	</div>
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
 	<!-- The application JavaScript code -->
 	<script src="js/app.js"></script>
