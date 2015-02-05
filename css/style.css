@@ -8,11 +8,15 @@ body {
 }
 
 #header {
-    margin-left: 0px;
-    padding-left: 40px;
+    margin-left: 35px;
+    margin-right: 35px;        
+
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: gray;
+    background-color: #C8D6E3;
+    border: 2px solid black;
 }
 
 h1 {
@@ -47,6 +51,31 @@ div #myDinnerView {
     padding: 20px;
     margin-right: 80%;
 }
+
+#doubleBorderRow {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #C8D6E3;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+#forceLength {
+    position: relative;
+    
+}
+
+td {
+    padding-right: 25px;
+}
+
+#addedDishes {
+
+}
+
+
 
 #spinner {
     margin-left: 12px;
