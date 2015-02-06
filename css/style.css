@@ -1,10 +1,14 @@
 body {
-    /* background-image: url("../images/family-cooking.jpg"); */
+    /*background-image: url("../images/family-cooking.jpg"); */
     background-size: 100%;
  }
 
 .container {
     margin-left: 20px;
+    margin-right: 20px;
+	width: auto;
+
+    padding-bottom: 30px;
 }
 
 #header {
@@ -35,7 +39,7 @@ hr {
 /*-----------FIRST PAGE-----------*/
 
 div #firstPage {
-    display: none;
+   display: none;
 }
 
 #serviceDescription {
@@ -55,6 +59,7 @@ div #myDinnerView {
     padding: 20px;
     width: 20%;
     float: left;
+	display: none;
 }
 
 #doubleBorderRow {
@@ -86,7 +91,7 @@ div #myDinnerView {
     margin-left: 20%;
     height: 150px;
     background-color: #FFCC80;
-
+	display: none;
 
 }
 
@@ -99,7 +104,7 @@ div #myDinnerView {
     margin-left: 20%;
     padding: 20px;
     background-color: yellow;
-
+	display: none;
     overflow: -moz-scrollbars-vertical;
     overflow-y: scroll;
 
@@ -142,3 +147,25 @@ td .dishDescription {
 }
 
 /*---------END distListView---------*/
+
+/*--------START overviewView--------*/
+#overviewView {
+	width: 100%;
+}
+
+#dinnerOverviewView-myDinnerText {
+	float: left;
+}
+
+#dinnerOverviewView-goBack {
+	float: right;
+}
+
+#dinnerOverviewView-top {
+	padding-left: 35px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 45px;
+	background-color: yellow;
+}
+/*---------END overviewView---------*/
