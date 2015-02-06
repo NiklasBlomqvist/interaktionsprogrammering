@@ -150,12 +150,7 @@ td .dishDescription {
 
 /*---------END distListView---------*/
 
-/*--------START overviewView--------*/
-#dinnerOverviewView {
-	width: 100%;
-	display:none;
-}
-
+/*------START dinnerOverViewTop-----*/
 #dinnerOverviewView-myDinnerText {
 	float: left;
 	font-size: 20px;
@@ -171,6 +166,13 @@ td .dishDescription {
     padding-top: 20px;
     padding-bottom: 50px;
 	background-color: #FFCC80;
+}
+/*-------END dinnerOverViewTop------*/
+
+/*--------START overviewView--------*/
+#dinnerOverviewView {
+	width: 100%;
+	display:none;
 }
 
 #dinnerOverviewView-dishes {
@@ -201,7 +203,7 @@ td .dishDescription {
 }
 
 #filler1 {
-border-left: 1px solid black;
+	border-left: 1px solid black;
 	height: 120px;
 }
 
@@ -219,3 +221,17 @@ border-left: 1px solid black;
 
 
 /*---------END overviewView---------*/
+
+/*-------START preparationView------*/
+#dinnerPreparationView {
+
+}
+
+.preparationViewText{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+/*--------END preparationView-------*/
