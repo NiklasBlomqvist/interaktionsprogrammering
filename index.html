@@ -155,35 +155,67 @@
 				</div>
 			</div>
 			<div id="dinnerOverviewView-dishes">
-				<table>
-					<tr>
-						<td id="chosen-starter-img">
-							<img class="dishImages" src="images/toast.jpg" alt="toast">
-						</td>
-						<td id="chosen-main-img">
-							<img class="dishImages" src="images/meatballs.jpg" alt="meatballs">
-						</td>
-						<td id="chosen-dessert-img">
-							<img class="dishImages" src="images/icecream.jpg" alt="icecream">
-						</td>
-					</tr>
-					<tr>
-						<td id="chosen-starter">
-						</td>
-						<td id="chosen-main">
-						</td>
-						<td id="chosen-dessert">
-						</td>
-					</tr>
-					<tr>
-						<td id="chosen-starter-price">
-						</td>
-						<td id="chosen-main-price">
-						</td>
-						<td id="chosen-dessert-price">
-						</td>
-					</tr>
-				</table>
+				<table id="dinnerOverviewView-dishesTable"><tr><td>
+					<table class="dishContainer">
+						<tr>
+							<td id="chosen-starter-img">
+								<img class="dishImages" src="images/toast.jpg" alt="toast">
+							</td>
+						</tr>
+						<tr>
+							<td id="chosen-starter" class="dishName">
+								Toast
+							</td>
+						</tr>
+						<tr>
+							<td id="chosen-starter-price" class="dishPrice">
+							72.20 SEK
+							</td>
+						</tr>
+					<table class="dishContainer">
+						<tr>
+							<td id="chosen-main-img">
+								<img class="dishImages" src="images/meatballs.jpg" alt="meatballs">
+							</td>
+						</tr>
+						<tr>
+							<td id="chosen-main" class="dishName">
+								Meatballs
+							</td>
+						</tr>
+						<tr>
+							<td id="chosen-main-price" class="dishPrice">
+							180.60 SEK
+							</td>
+						</tr>
+					</table>
+					<table class="dishContainer">
+						<tr>
+							<td id="chosen-dessert-img">
+								<img class="dishImages" src="images/icecream.jpg" alt="icecream">
+							</td>
+						</tr>
+						<tr>
+							<td id="chosen-dessert" class="dishName">
+								Icecream
+							</td>
+						</tr>
+						<tr>
+							<td id="chosen-dessert-price" class="dishPrice">
+							83.40 SEK
+							</td>
+						</tr>
+					</table>
+					<table class="dishContainer" id="total-price-table">
+						<tr><td id="filler1"></td></tr>
+						<tr><td id="filler2">Total:</td></tr>
+						<tr>
+							<td  class="dishPrice" id="total-price-td">
+							341.20 SEK
+							</td>
+						</tr>
+					</table>
+				</td></tr></table>
 			</div>
         </div>
 

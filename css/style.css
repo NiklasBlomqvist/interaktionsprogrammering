@@ -123,6 +123,8 @@ div #myDinnerView {
 
 .dishName {
     background-color: #C8D6E3;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .dishInTable {
@@ -168,4 +170,44 @@ td .dishDescription {
     padding-bottom: 45px;
 	background-color: yellow;
 }
+
+#dinnerOverviewView-dishes {
+	text-align: center;
+}
+
+#dinnerOverviewView-dishesTable {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+}
+
+.dishContainer {
+	float:left;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.dishPrice {
+	color: red;
+	text-align: right;
+}
+
+#total-price-td {
+	border-left: 2px solid black;
+	padding-left: 20px;
+	text-align: left;
+}
+
+#filler1 {
+border-left: 2px solid black;
+	height: 120px;
+}
+
+#filler2 {
+	border-left: 2px solid black;
+	height: 30px;
+	text-align: left;
+	padding-left: 20px;
+}
+
 /*---------END overviewView---------*/
