@@ -17,6 +17,7 @@
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
     <script>
+    /* Dropdown - doesn't work flawlessly
     $(function(){
         $(".dropdown-menu li a").click(function(){
             $(".btn:first-child").text($(this).text());
@@ -24,7 +25,7 @@
 
 
         });
-    });
+    });*/
     </script>
 
 
@@ -65,12 +66,13 @@
                     </tr>
                     <tr><td id="forceLength"><hr></td></tr>
                     <tr>
-                        <td></td> <td>SEK 0.00</td>
+                        <td></td> <td class="alignRight">SEK 0.00</td>
                     </tr>
                 </table>
-            </div>
+            </div> 
+            <br>
             <div id="myDinnerView-Bottom">
-                <button>Confirm Dinner</button>            
+                <button id="confirmDinner">Confirm Dinner</button>            
             </div>
         </div>
 

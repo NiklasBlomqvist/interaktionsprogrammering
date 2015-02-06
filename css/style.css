@@ -59,10 +59,12 @@ div #myDinnerView {
     padding: 20px;
     width: 20%;
     float: left;
-	display: none;
+
+    height: 500px;
 }
 
 #doubleBorderRow {
+
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     background-color: #C8D6E3;
@@ -72,7 +74,19 @@ div #myDinnerView {
     text-align: right;
 }
 
+#forceLength {
+}
+
 #addedDishes {
+    width: 100%;
+
+}
+
+#myDinnerView-Bottom {
+    text-align: center;
+}
+
+#confirmDinner{
 
 }
 
@@ -91,7 +105,7 @@ div #myDinnerView {
     margin-left: 20%;
     height: 150px;
     background-color: #FFCC80;
-	display: none;
+
 
 }
 
@@ -104,7 +118,8 @@ div #myDinnerView {
     margin-left: 20%;
     padding: 20px;
     background-color: yellow;
-	display: none;
+    height: 350px;
+    
     overflow: -moz-scrollbars-vertical;
     overflow-y: scroll;
 
@@ -151,22 +166,27 @@ td .dishDescription {
 /*---------END distListView---------*/
 
 /*------START dinnerOverViewTop-----*/
-#dinnerOverviewView-myDinnerText {
-	float: left;
-	font-size: 20px;
-}
-
-#dinnerOverviewView-goBack {
-	float: right;
-}
-
 #dinnerOverviewView-top {
 	padding-left: 35px;
     padding-right: 15px;
     padding-top: 20px;
     padding-bottom: 50px;
 	background-color: #FFCC80;
+
+	display: none;
 }
+
+#dinnerOverviewView-myDinnerText {
+	float: left;
+	font-size: 20px;
+
+}
+
+#dinnerOverviewView-goBack {
+	float: right;
+}
+
+
 /*-------END dinnerOverViewTop------*/
 
 /*--------START overviewView--------*/
@@ -224,6 +244,7 @@ td .dishDescription {
 
 /*-------START preparationView------*/
 #dinnerPreparationView {
+	display: none;
 
 }
 
