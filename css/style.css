@@ -151,12 +151,14 @@ td .dishDescription {
 /*---------END distListView---------*/
 
 /*--------START overviewView--------*/
-#overviewView {
+#dinnerOverviewView {
 	width: 100%;
+	display:none;
 }
 
 #dinnerOverviewView-myDinnerText {
 	float: left;
+	font-size: 20px;
 }
 
 #dinnerOverviewView-goBack {
@@ -166,9 +168,9 @@ td .dishDescription {
 #dinnerOverviewView-top {
 	padding-left: 35px;
     padding-right: 15px;
-    padding-top: 30px;
-    padding-bottom: 45px;
-	background-color: yellow;
+    padding-top: 20px;
+    padding-bottom: 50px;
+	background-color: #FFCC80;
 }
 
 #dinnerOverviewView-dishes {
@@ -193,21 +195,27 @@ td .dishDescription {
 }
 
 #total-price-td {
-	border-left: 2px solid black;
+	border-left: 1px solid black;
 	padding-left: 20px;
 	text-align: left;
 }
 
 #filler1 {
-border-left: 2px solid black;
+border-left: 1px solid black;
 	height: 120px;
 }
 
 #filler2 {
-	border-left: 2px solid black;
+	border-left: 1px solid black;
 	height: 30px;
 	text-align: left;
 	padding-left: 20px;
 }
+
+#dinnerOverviewView-button {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 
 /*---------END overviewView---------*/
