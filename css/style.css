@@ -179,7 +179,12 @@ td .dishDescription {
 /*---------END distListView---------*/
 
 /*---------START dishDetailsView---------*/
+#dishDetailsView {
+    border: 1px solid black;
+}
+
 #dishDetailsView-Overview {
+
     padding-left: 40px;
     padding-right: 40px;
     float: left;
