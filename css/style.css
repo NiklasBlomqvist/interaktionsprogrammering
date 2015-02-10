@@ -62,12 +62,14 @@ div #firstPage {
 /*---------START mydinnerView---------*/
 
 div #myDinnerView {
+    display: none;
+
     border: 2px solid black;
     padding: 20px;
     width: 20%;
     float: left;
 
-    height: 500px;
+    min-height: 500px;
 }
 
 #doubleBorderRow {
@@ -182,33 +184,38 @@ td .dishDescription {
 
 /*---------START dishDetailsView---------*/
 #dishDetailsView {
-    border: 1px solid black;
+    display: none;
+
+    float: left;
+    width: 80%;
 }
 
 #dishDetailsView-Overview {
-
     padding-left: 40px;
     padding-right: 40px;
     float: left;
-    width: 480px;
+    width: 60%;
+    border: 1px solid black;
+    background-color: white;
 }
+
+#dishDetailsView-Ingredients{
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid black;
+    background-color: #FFCC80;
+
+}
+
 
 #dishDetailsView-Dish {
     width: 400px;
 }
 
-#dishDetailsView-Ingredients{
-    float: left;
-
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 1px solid black;
-    background-color: #FFCC80;
-}
-
 #dishDetailsView-Ingredients-Table td{
     padding-right: 10px;
     padding-bottom: 10px;
+    padding-left: 10px;
 
 }
 
