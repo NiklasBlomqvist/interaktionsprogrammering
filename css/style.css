@@ -1,6 +1,7 @@
 body {
     /*background-image: url("../images/family-cooking.jpg"); */
     background-size: 100%;
+
  }
 
 .container {
@@ -62,7 +63,6 @@ div #firstPage {
 /*---------START mydinnerView---------*/
 
 div #myDinnerView {
-    display: none;
 
     border: 2px solid black;
     padding: 20px;
@@ -184,13 +184,18 @@ td .dishDescription {
 
 /*---------START dishDetailsView---------*/
 #dishDetailsView {
-    display: none;
+    height: 500px;
+
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
 
     float: left;
     width: 80%;
+
+    border: 1px solid black;
 }
 
-#dishDetailsView-Overview {
+#dishDetailsView-Overview { 
     padding-left: 40px;
     padding-right: 40px;
     float: left;
@@ -200,8 +205,8 @@ td .dishDescription {
 }
 
 #dishDetailsView-Ingredients{
-    padding-left: 20px;
-    padding-right: 20px;
+
+
     border: 1px solid black;
     background-color: #FFCC80;
 
@@ -209,13 +214,15 @@ td .dishDescription {
 
 
 #dishDetailsView-Dish {
+    height: 270px;    
     width: 400px;
 }
 
 #dishDetailsView-Ingredients-Table td{
-    padding-right: 10px;
+    height: 2px
+    padding-right: 5px;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 20px;
 
 }
 
@@ -229,13 +236,15 @@ td .dishDescription {
 
 /*------START dinnerOverViewTop-----*/
 #dinnerOverviewView-top {
+    display: none;
+
 	padding-left: 35px;
     padding-right: 15px;
     padding-top: 20px;
     padding-bottom: 50px;
 	background-color: #FFCC80;
 
-	display: none;
+
 }
 
 #dinnerOverviewView-myDinnerText {
@@ -253,8 +262,9 @@ td .dishDescription {
 
 /*--------START overviewView--------*/
 #dinnerOverviewView {
-	width: 100%;
 	display: none;
+
+	width: 100%;
 }
 
 #dinnerOverviewView-dishes {
