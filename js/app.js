@@ -9,11 +9,19 @@ $(function() {
 	var myDinnerView = new MyDinnerView($("#myDinnerView"), model);
 	var selectDishView = new SelectDishView($("#selectDishView"), model);
 	var dishListView = new DishListView($("#dishListView"), model);
+    var dishDetailsView = new DishDetailsView($("#dishDetailsView"), model);
 	
-	myDinnerView.show();
-	selectDishView.show();
+	
+	
+    /* Show selectDishView & dishListView
+    myDinnerView.show();
+    selectDishView.show();
 	dishListView.show();
 	
-	dishListView.update("main dish", "");
+	dishListView.update("main dish", "");*/
+
+    myDinnerView.show();
+    dishDetailsView.show();
+    dishDetailsView.update();
 	
 });

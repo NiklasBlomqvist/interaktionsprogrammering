@@ -2,7 +2,7 @@
 var DinnerModel = function() {
  
 	// and selected dinner options for dinner menu
-    this.numberOfGuests = 0;
+    this.numberOfGuests;
     this.starter;
     this.mainDish;
     this.dessert;
