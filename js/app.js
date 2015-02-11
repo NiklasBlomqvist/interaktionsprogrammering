@@ -12,17 +12,25 @@ $(function() {
     var dishDetailsView = new DishDetailsView($("#dishDetailsView"), model);
 	var dinnerOverviewView = new DinnerOverviewView($("#dinnerOverviewView"), model);
 	
-	
-    /* Show selectDishView & dishListView
+    /*
     myDinnerView.show();
     selectDishView.show();
 	dishListView.show();
-	
-	dishListView.update("main dish", "");*/
+	dishListView.update("main dish", "");
+    */
 
-    dinnerOverviewView.show();
+    
     model.addDishToMenu(1);
-    dinnerOverviewView.update();   
+    myDinnerView.show();
+    selectDishView.show();
+	dishListView.show();
+	dishListView.update("main dish", "");
+    
+
+    /*dinnerOverviewView.show();
+    model.addDishToMenu(1);
+    dinnerOverviewView.update();
+    */   
     
     /*myDinnerView.show();
     dishDetailsView.show();
