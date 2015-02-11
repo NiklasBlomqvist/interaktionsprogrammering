@@ -44,6 +44,14 @@ input[type=number]::-webkit-inner-spin-button {
     opacity: 1
 }
 
+.btn-danger {
+    color: black;
+    background-color: #FF944D;
+    border-color: black;
+    box-shadow: 2px 3px 0 0 black;
+    border-radius: 2px;
+}
+
 /*-----------FIRST PAGE-----------*/
 
 div #firstPage {
