@@ -240,7 +240,7 @@
                 <h3><b> LASAGNE </b></h3>
                 <img id="dishDetailsView-Dish" src="images/lasagne.jpg" alt="lasagne">
                 <p> Lorem ipsum dolor sit amet, pro an dolore mediocrem, eu mei quaeque graecis fierent. Pri id iuvaret volumus apeirian. Eos euismod noluisse cotidieque ei, id est labore verear scripserit. Suavitate accusamus splendide ea quo. Eu sed doming epicurei urbanitas. </p>
-                <button> Back </button>
+                <button class="btn btn-danger"> Back to Select Dish </button>
                 <h3><b> PREPARATION </b></h3>
                 <p> Lorem ipsum dolor sit amet, pro an dolore mediocrem, eu mei quaeque graecis fierent. Pri id iuvaret volumus apeirian. Eos euismod noluisse cotidieque ei, id est labore verear scripserit. Suavitate accusamus splendide ea quo. Eu sed doming epicurei urbanitas. 
                 </br></br>
@@ -386,7 +386,7 @@
 
                     <tr>
                         <td colspan="2">
-                            <button> Confirm Dish </button>
+                            <button class="btn btn-danger"> Confirm Dish </button>
                         </td>
 
                         <td>
@@ -408,7 +408,7 @@
 				<p>My Dinner: <span id="dinnerOverView-numPeople">4</span> people</p>
 			</div>
 			<div id="dinnerOverviewView-goBack">
-				<button id="dinnerOverviewView-goBackButton">Go back and edit dinner</button>
+				<button id="dinnerOverviewView-goBackButton" class="btn btn-danger">Go back and edit dinner</button>
 			</div>
 		</div>
 
@@ -418,13 +418,13 @@
 				<table id="dinnerOverviewView-dishesTable"><tr><td>
 					<table class="dishContainer">
 						<tr>
-							<td id="chosen-starter-img">
+							<td id="chosen-starter-img" class="borderImageNoBottom">
 								<img class="dishImages" src="images/toast.jpg" alt="toast">
 							</td>
 						</tr>
 						<tr>
-							<td id="chosen-starter" class="dishName">
-								Toast
+							<td id="chosen-starter" class="dishName borderImage">
+								Toast 
 							</td>
 						</tr>
 						<tr>
@@ -432,14 +432,15 @@
 							72.20 SEK
 							</td>
 						</tr>
+                    </table>
 					<table class="dishContainer">
 						<tr>
-							<td id="chosen-main-img">
+							<td id="chosen-main-img" class="borderImageNoBottom">
 								<img class="dishImages" src="images/meatballs.jpg" alt="meatballs">
 							</td>
 						</tr>
 						<tr>
-							<td id="chosen-main" class="dishName">
+							<td id="chosen-main" class="dishName borderImage">
 								Meatballs
 							</td>
 						</tr>
@@ -451,12 +452,12 @@
 					</table>
 					<table class="dishContainer">
 						<tr>
-							<td id="chosen-dessert-img">
+							<td id="chosen-dessert-img" class="borderImageNoBottom">
 								<img class="dishImages" src="images/icecream.jpg" alt="icecream">
 							</td>
 						</tr>
 						<tr>
-							<td id="chosen-dessert" class="dishName">
+							<td id="chosen-dessert" class="dishName borderImage">
 								Icecream
 							</td>
 						</tr>
@@ -478,7 +479,7 @@
 				</td></tr></table>
 				<hr />
 				<div>
-					<button id="dinnerOverviewView-button">PRINT FULL RECIPE</button>
+					<button id="dinnerOverviewView-button" class="btn btn-danger">Print Full Recipe</button>
 				</div>
 			</div>
         </div>
@@ -489,7 +490,7 @@
 					<table class="dishContainer">
 						<tr>
 							<td>
-								<img class="dishImages" src="images/toast.jpg" alt="toast">
+								<img class="dishImages borderImage" src="images/toast.jpg" alt="toast">
 							</td>
 							<td class="preparationViewText">
 								<h3>Toast</h3>
@@ -512,7 +513,7 @@ Dicunt accusata nam te. Liber graeci adversarium mei ei. Ludus concludaturque pe
 					<table class="dishContainer">
 						<tr>
 							<td>
-								<img class="dishImages" src="images/meatballs.jpg" alt="meatballs">
+								<img class="dishImages borderImage" src="images/meatballs.jpg" alt="meatballs">
 							</td>
 							<td class="preparationViewText">
 								<h3>Meatballs</h3>
@@ -535,7 +536,7 @@ Dicunt accusata nam te. Liber graeci adversarium mei ei. Ludus concludaturque pe
 					<table class="dishContainer">
 						<tr>
 							<td>
-								<img class="dishImages" src="images/icecream.jpg" alt="icecream">
+								<img class="dishImages borderImage" src="images/icecream.jpg" alt="icecream">
 							</td>
 							<td class="preparationViewText">
 								<h3>Icecream</h3>
