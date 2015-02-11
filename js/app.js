@@ -20,14 +20,13 @@ $(function() {
 	
 	dishListView.update("main dish", "");*/
 
+    dinnerOverviewView.show();
+    model.addDishToMenu(1);
+    dinnerOverviewView.update();   
+    
     /*myDinnerView.show();
     dishDetailsView.show();
-    dishDetailsView.update();*/
-    
-    dinnerOverviewView.show();
-    
-    model.addDishToMenu(1);
-    
-    dinnerOverviewView.update();
-	
+    var dish = model.getDish(1);
+    dishDetailsView.update(dish);
+	*/
 });
