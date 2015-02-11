@@ -2,7 +2,7 @@
 var DinnerModel = function() {
  
 	// and selected dinner options for dinner menu
-    this.numberOfGuests;
+    this.numberOfGuests = 3;
     this.starter;
     this.mainDish;
     this.dessert;
@@ -62,7 +62,7 @@ var DinnerModel = function() {
 	//Adds the passed dish to the menu. If the dish of that type already exists on the menu
 	//it is removed from the menu and the new one added.
 	this.addDishToMenu = function(id) {
-        var currentDish = getDish(id);
+        var currentDish = this.getDish(id);
 
         if(currentDish.type === "starter") {
             this.starter = currentDish;
@@ -76,7 +76,7 @@ var DinnerModel = function() {
 
 	//Removes dish from menu
 	this.removeDishFromMenu = function(id) {
-		var currentDish = getDish(id);
+		var currentDish = this.getDish(id);
 
         if(currentDish.type === "starter") {
             this.starter = null;

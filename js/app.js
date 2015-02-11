@@ -22,6 +22,7 @@ $(function() {
 
     myDinnerView.show();
     dishDetailsView.show();
-    dishDetailsView.update();
+    var dish = model.getDish(1);
+    dishDetailsView.update(dish);
 	
 });

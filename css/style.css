@@ -215,14 +215,10 @@ div #myDinnerView {
     padding-right: 40px;
     float: left;
     width: 60%;
-    border: 1px solid black;
     background-color: white;
 }
 
 #dishDetailsView-Ingredients{
-
-
-    border: 1px solid black;
     background-color: #FFFF83;
 
 }
@@ -239,6 +235,10 @@ div #myDinnerView {
     padding-bottom: 10px;
     padding-left: 20px;
 
+}
+
+.alignRight {
+    text-align: right;
 }
 
 .noPaddingBottom {
