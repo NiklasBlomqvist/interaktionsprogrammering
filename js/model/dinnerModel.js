@@ -2,7 +2,7 @@
 var DinnerModel = function() {
  
 	// and selected dinner options for dinner menu
-    this.numberOfGuests;
+    this.numberOfGuests = 3;
     this.starter;
     this.mainDish;
     this.dessert;
@@ -30,39 +30,74 @@ var DinnerModel = function() {
 
 	//Returns all the dishes on the menu.
 	this.getFullMenu = function() {
-		var return_data = [this.starter, this.mainDish, this.dessert];
+	var return_data = [];
+	    if (typeof this.starter != 'undefined') {
+	        return_data.push(this.starter);
+	    }
+	    
+	    if (typeof this.mainDish != 'undefined') {
+	        return_data.push(this.mainDish);
+	    }
+	    
+	    if (typeof this.dessert != 'undefined') {
+	        return_data.push(this.dessert);
+	    }
+	    
 	    return return_data;
 	}
 
 	//Returns all ingredients for all the dishes on the menu.
 	this.getAllIngredients = function() {
 		var return_data = [];
-		return_data.push(this.starter.ingredients);
-		return_data.push(this.mainDish.ingredients);
-		return_data.push(this.dessert.ingredients);
+		
+		if (typeof this.starter != 'undefined') {
+            return_data.push(this.starter.ingredients);
+		}
+		if (typeof this.mainDish != 'undefined') {
+            return_data.push(this.mainDish.ingredients);
+		}
+		if (typeof this.dessert != 'undefined') {
+            return_data.push(this.dessert.ingredients);
+		}	
+		
+		return return_data;
 	}
 
 	//Returns the total price of the menu (all the ingredients multiplied by number of guests).
 	this.getTotalMenuPrice = function() {
-        var dishes = getAllIngredients();
+        var ingredients = this.getAllIngredients();
         var price = 0;
 
-        for(ingredients in dishes) {
-            for(ingredient in ingredients) {
-                price += ingredient.price;
+        for(var i = 0; i < ingredients.length; i++) {
+            for (var j = 0; j < ingredients[i].length; j++) {
+                price += ingredients[i][j].price;
             }
         }
 
-        price = getNumberOfGuests() * price;
+        price = this.getNumberOfGuests() * price;
 
         return price;
 
+	}
+	
+	// Returns the total price of a dish (all its ingredients multiplied by number of guests)
+	this.getDishPrice = function(id) {
+	    var ingredients = this.getDish(id).ingredients;
+	    var price = 0;
+	    
+	    for(key in ingredients) {
+	        price += ingredients[key].price;
+	    }
+	    
+	    price = this.getNumberOfGuests() * price;
+	    
+	    return price;
 	}
 
 	//Adds the passed dish to the menu. If the dish of that type already exists on the menu
 	//it is removed from the menu and the new one added.
 	this.addDishToMenu = function(id) {
-        var currentDish = getDish(id);
+        var currentDish = this.getDish(id);
 
         if(currentDish.type === "starter") {
             this.starter = currentDish;
@@ -76,7 +111,7 @@ var DinnerModel = function() {
 
 	//Removes dish from menu
 	this.removeDishFromMenu = function(id) {
-		var currentDish = getDish(id);
+		var currentDish = this.getDish(id);
 
         if(currentDish.type === "starter") {
             this.starter = null;

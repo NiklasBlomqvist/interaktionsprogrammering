@@ -10,7 +10,7 @@ $(function() {
 	var selectDishView = new SelectDishView($("#selectDishView"), model);
 	var dishListView = new DishListView($("#dishListView"), model);
     var dishDetailsView = new DishDetailsView($("#dishDetailsView"), model);
-	
+	var dinnerOverviewView = new DinnerOverviewView($("#dinnerOverviewView"), model);
 	
 	
     /* Show selectDishView & dishListView
@@ -20,8 +20,14 @@ $(function() {
 	
 	dishListView.update("main dish", "");*/
 
-    myDinnerView.show();
+    /*myDinnerView.show();
     dishDetailsView.show();
-    dishDetailsView.update();
+    dishDetailsView.update();*/
+    
+    dinnerOverviewView.show();
+    
+    model.addDishToMenu(1);
+    
+    dinnerOverviewView.update();
 	
 });
