@@ -220,6 +220,7 @@ div #myDinnerView {
 
 #dishDetailsView-Ingredients{
     background-color: #FFFF83;
+    border-bottom: 1px solid black;
 
 }
 
@@ -235,6 +236,10 @@ div #myDinnerView {
     padding-bottom: 10px;
     padding-left: 20px;
 
+}
+
+#dishDetailsView-Ingredients-Table {
+    border-left: 1px solid black;
 }
 
 .alignRight {
