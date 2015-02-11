@@ -52,10 +52,10 @@ input[type=number]::-webkit-inner-spin-button {
     border-radius: 2px;
 }
 
-/*-----------FIRST PAGE-----------*/
+/*-----------FirstPageView-----------*/
 
-div #firstPage {
-    display: none;
+div #firstPageView {
+
 }
 
 #serviceDescription {
@@ -65,7 +65,7 @@ div #firstPage {
     padding: 20px;
 }
 
-/*---------END FIRST PAGE---------*/
+/*---------END FirstPageView---------*/
 
 
 /*---------START mydinnerView---------*/
@@ -252,7 +252,7 @@ td .dishDescription {
 
 /*------START dinnerOverViewTop-----*/
 #dinnerOverviewView-top {
-
+    display: none;
 
 	padding-left: 35px;
     padding-right: 15px;
@@ -344,7 +344,7 @@ td .dishDescription {
 
 /*-------START preparationView------*/
 #dinnerPreparationView {
-
+    display: none;
 
 }
 
