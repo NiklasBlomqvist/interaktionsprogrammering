@@ -14,4 +14,6 @@ $(function() {
 	selectDishView.show();
 	dishListView.show();
 	
+	dishListView.update("main dish", "");
+	
 });

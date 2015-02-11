@@ -183,7 +183,7 @@ div #myDinnerView {
     width: 140px
 }
 
-td .dishDescription {
+.dishDescription {
     text-align: left;
     padding-top: 20px;
 
