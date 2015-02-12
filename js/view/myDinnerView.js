@@ -29,8 +29,10 @@ var MyDinnerView = function (container, model) {
     }
 
     this.updatePending = function(dish) {
+        container.find("#myDinnerView-Pending").html("");
         var pendingContent = "<table class='btnContent'><tr><td>" + "Pending" + "</td><td class='alignRight'>" + model.getDishPrice(dish.id) + "</td></tr></table>";
         container.find("#myDinnerView-Extra").append("<button class='btn btn-info'>" + pendingContent + "</button>");
+        container.find("#myDinnerTotalPrice").html("SEK " + (model.getTotalMenuPrice() + model.getDishPrice(dish.id)));
         
     }
 	
