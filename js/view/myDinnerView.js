@@ -2,9 +2,6 @@
 var MyDinnerView = function (container, model) {
     
     this.update = function() {
-        console.log(model.getSelectedDish("starter"));
-        console.log(model.getSelectedDish("main dish"));
-        console.log(model.getSelectedDish("dessert"));
 
         var starter = model.getSelectedDish("starter");
         var main = model.getSelectedDish("main dish");
