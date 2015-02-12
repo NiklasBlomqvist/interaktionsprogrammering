@@ -12,15 +12,15 @@ var MyDinnerView = function (container, model) {
 
 
         if(typeof starter != 'undefined') {
-            var starterContent = "<table class='btnContent'><tr><td>" + starter.name + "</td><td>" + model.getDishPrice(starter.id) + "</td></tr></table>";
+            var starterContent = "<table class='btnContent'><tr><td>" + starter.name + "</td><td class='alignRight'>" + model.getDishPrice(starter.id) + "</td></tr></table>";
             container.find("#myDinnerView-Dishes").append("<button type='button' class='btn btn-primary'>" + starterContent + "</button>");
         }
         if(typeof main != 'undefined') {
-            var mainContent = "<table class='btnContent'><tr><td>" + main.name + "</td><td>" + model.getDishPrice(main.id) + "</td></tr></table>";
+            var mainContent = "<table class='btnContent'><tr><td>" + main.name + "</td><td class='alignRight'>" + model.getDishPrice(main.id) + "</td></tr></table>";
             container.find("#myDinnerView-Dishes").append("<button class='btn btn-primary'>" + mainContent + "</button>");
         }
         if(typeof dessert != 'undefined') {
-            var dessertContent = "<table class='btnContent'><tr><td>" + dessert.name + "</td><td>" + model.getDishPrice(dessert.id) + "</td></tr></table>";
+            var dessertContent = "<table class='btnContent'><tr><td>" + dessert.name + "</td><td class='alignRight'>" + model.getDishPrice(dessert.id) + "</td></tr></table>";
             container.find("#myDinnerView-Dishes").append("<button class='btn btn-primary'>" + dessertContent + "</button>");
         }
 

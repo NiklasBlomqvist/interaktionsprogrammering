@@ -22,6 +22,7 @@ $(function() {
     
     model.addDishToMenu(1);
     model.addDishToMenu(100);
+    model.addDishToMenu(200);
     myDinnerView.show();
     selectDishView.show();
 	dishListView.show();
