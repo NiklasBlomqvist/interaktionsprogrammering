@@ -20,11 +20,10 @@ var DishDetailsView = function (container, model) {
                 "<tr><td class='noPaddingBottom' colspan='4'>" +  
                     "<hr>" + 
                 "</td></tr>";
-
-                
+           
         for(var i=0; i<dish.ingredients.length; i++) {
             ingredientList += "<tr>";
-            ingredientList += "<td>" + dish.ingredients[i].quantity * guests + " " + dish.ingredients[i].unit + "</td>";
+            ingredientList += "<td>" + (Math.round((dish.ingredients[i].quantity * guests) * 10) / 10) + " " + dish.ingredients[i].unit + "</td>";
             ingredientList += "<td>" + dish.ingredients[i].name + "</td>";
             ingredientList += "<td>SEK</td>";
             ingredientList += "<td class='alignRight'>" + dish.ingredients[i].price * guests + "</td>";

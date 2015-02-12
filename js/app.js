@@ -40,7 +40,7 @@ $(function() {
     // myDinnerView + dishDetailsView (LASAGNE)
     myDinnerView.show();
     dishDetailsView.show();
-    var dish = model.getDish(1);
+    var dish = model.getDish(100);
     dishDetailsView.update(dish);
     
 	
