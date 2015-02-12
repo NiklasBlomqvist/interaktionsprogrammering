@@ -2,6 +2,8 @@
 var DishDetailsView = function (container, model) {
 
     this.update = function(dish) {
+        var guests = model.getNumberOfGuests();
+    
         container.append("<div id='dishDetailsView-Overview'>" + 
             "<h3><b>" + dish.name + "</b></h3>" + 
             "<img id='dishDetailsView-Dish' src='images/" + dish.image + "'>" + 
@@ -22,16 +24,16 @@ var DishDetailsView = function (container, model) {
                 
         for(var i=0; i<dish.ingredients.length; i++) {
             ingredientList += "<tr>";
-            ingredientList += "<td>" + dish.ingredients[i].quantity + " " + dish.ingredients[i].unit + "</td>";
+            ingredientList += "<td>" + dish.ingredients[i].quantity * guests + " " + dish.ingredients[i].unit + "</td>";
             ingredientList += "<td>" + dish.ingredients[i].name + "</td>";
             ingredientList += "<td>SEK</td>";
-            ingredientList += "<td class='alignRight'>" + dish.ingredients[i].price + "</td>";
+            ingredientList += "<td class='alignRight'>" + dish.ingredients[i].price * guests + "</td>";
             ingredientList += "</tr>"; 
         }
 
         ingredientList += "<tr><td class='noPaddingBottom' colspan='4'>" + "<hr>" + "</td></tr>"; 
         ingredientList += "<tr><td colspan='2'>" + "<button class='btn btn-danger'>" + "Confirm Dish" + "</button>" + "</td>";
-        ingredientList += "<td>SEK</td><td>" + "TOTAL PRICE" + "</td></tr>";
+        ingredientList += "<td>SEK</td><td>" + model.getDishPrice(dish.id) + "</td></tr>";
 
         
         ingredientList += "</table></div">

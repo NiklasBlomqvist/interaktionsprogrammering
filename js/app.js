@@ -21,6 +21,7 @@ $(function() {
 
     
     model.addDishToMenu(1);
+    model.addDishToMenu(100);
     myDinnerView.show();
     selectDishView.show();
 	dishListView.show();
@@ -32,9 +33,11 @@ $(function() {
     dinnerOverviewView.update();
     */   
     
-    /*myDinnerView.show();
+    /*
+    myDinnerView.show();
     dishDetailsView.show();
     var dish = model.getDish(1);
     dishDetailsView.update(dish);
-	*/
+    */
+	
 });

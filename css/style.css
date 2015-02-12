@@ -52,6 +52,11 @@ input[type=number]::-webkit-inner-spin-button {
     border-radius: 2px;
 }
 
+.btn-primary {
+    margin: 10px;
+    width: 90%;
+}
+
 /*-----------FirstPageView-----------*/
 
 div #firstPageView {
@@ -75,15 +80,53 @@ div #myDinnerView {
 
     border: 2px solid black;
     border-top:1px solid black;
-    padding: 20px;
     width: 20%;
     float: left;
 
     min-height: 500px;
 }
 
-#doubleBorderRow {
+.borderAround {
+    border: 1px solid black;
+}
 
+#myDinnerView-Top-MyDinner {
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+#myDinnerView-Top-People {
+    padding-left: 15px;
+}
+
+#myDinnerView-Header {
+    width: 100%;
+}
+
+#myDinnerView-Header td{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#myDinnerView-Dishes {
+
+}
+
+#myDinnerView-Bottom {
+    width:100%;
+    
+}
+
+#myDinnerView-Bottom td {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.btnContent {
+    width: 100%;
+}
+
+#doubleBorderRow {
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     background-color: #C8D6E3;

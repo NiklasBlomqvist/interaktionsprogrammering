@@ -52,27 +52,33 @@
         <!-- MY DINNER VIEW -->
         <div id="myDinnerView">
             <div id="myDinnerView-Top">
-                <p> My Dinner </p>
-                <p> People <input id="spinner" type="number" min="0" max="30" step="1" value="3"></p>
+                <p id="myDinnerView-Top-MyDinner"><b> My Dinner </b></p>
+                <p id="myDinnerView-Top-People"> People <input id="spinner" type="number" min="0" max="30" step="1" value="3"></p>
                 
             </div>
 
             <div id="myDinnerView-AddedDishes">
-                <table id="addedDishes">                
+                <table id="myDinnerView-Header">
                     <tr id="doubleBorderRow"> 
                         <td> Dish Name </td> <td class="alignRight"> Cost </td>
                     </tr>
-                    <tr>
-                        <td id="placeForAmount"><td id="placeForStarter"></td><td id="placeForStarterPrice" class="alignRight"></td>
-                    </tr>
+                </table>
+
+                <div id="myDinnerView-Dishes">
+                       
+                </div>
+
+                <table id="myDinnerView-Bottom">
                     <tr>
                         <td><br> Pending </td> <td class="alignRight"><br> 0.00</td>
                     </tr> 
-                    <tr><td colspan="2"><hr></td></tr>
                     <tr>
-                        <td></td> <td class="alignRight" id="myDinnerTotalPrice"></td>
+                        <td colspan="2"><hr></td></tr>
+                    <tr>
+                        <td></td> <td class="alignRight" id="myDinnerTotalPrice">SEK</td>
                     </tr>
                 </table>
+ 
             </div> 
             <br>
             <div id="myDinnerView-Bottom">
