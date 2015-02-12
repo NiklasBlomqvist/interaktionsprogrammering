@@ -12,6 +12,7 @@ $(function() {
     var dishDetailsView = new DishDetailsView($("#dishDetailsView"), model);
 	var dinnerOverviewView = new DinnerOverviewView($("#dinnerOverviewView"), model);
 	
+    //  myDinnerView + seletDishView + dishListView   
     /*
     myDinnerView.show();
     selectDishView.show();
@@ -19,7 +20,8 @@ $(function() {
 	dishListView.update("main dish", "");
     */
 
-    
+    // myDinnerView with 3 dishes + selectDishView + dishListView
+    /*
     model.addDishToMenu(1);
     model.addDishToMenu(100);
     model.addDishToMenu(200);
@@ -27,18 +29,19 @@ $(function() {
     selectDishView.show();
 	dishListView.show();
 	dishListView.update("main dish", "");
-    
-
-    /*dinnerOverviewView.show();
-    model.addDishToMenu(1);
-    dinnerOverviewView.update();
-    */   
+    */
     
     /*
+    dinnerOverviewView.show();
+    model.addDishToMenu(1);
+    dinnerOverviewView.update();
+    */ 
+    
+    // myDinnerView + dishDetailsView (LASAGNE)
     myDinnerView.show();
     dishDetailsView.show();
     var dish = model.getDish(1);
     dishDetailsView.update(dish);
-    */
+    
 	
 });
