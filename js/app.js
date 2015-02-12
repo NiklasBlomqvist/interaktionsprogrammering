@@ -36,7 +36,7 @@ $(function() {
     */
 
     // myDinnerView with 2 dishes + dishDetailsView (LASAGNE) pending state
-    /*
+    
     model.addDishToMenu(1);
     model.addDishToMenu(200);
 
@@ -47,7 +47,7 @@ $(function() {
     
     myDinnerView.updatePending(dish);
     dishDetailsView.update(dish);
-    */
+    
 
     // dinnerOverView    
     /*
