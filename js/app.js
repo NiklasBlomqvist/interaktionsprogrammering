@@ -12,6 +12,11 @@ $(function() {
     var dishDetailsView = new DishDetailsView($("#dishDetailsView"), model);
 	var dinnerOverviewView = new DinnerOverviewView($("#dinnerOverviewView"), model);
 	
+    // firstPageView
+    /*
+    firstPageView.show();
+    */
+
     //  myDinnerView + seletDishView + dishListView   
     /*
     myDinnerView.show();
@@ -38,7 +43,7 @@ $(function() {
     */ 
     
     // myDinnerView with 2 dishes + dishDetailsView (LASAGNE) pending state
-    model.addDishToMenu(1);
+    /*model.addDishToMenu(1);
 
     model.addDishToMenu(200);
 
@@ -49,6 +54,6 @@ $(function() {
     
     myDinnerView.updatePending(dish);
     dishDetailsView.update(dish);
-    
+    */
 	
 });

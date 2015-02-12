@@ -1,7 +1,5 @@
 body {
-    /*background-image: url("../images/family-cooking.jpg");*/
     background-size: 100%;
-
  }
 
 .container {
@@ -78,7 +76,15 @@ div #firstPageView {
     display:none;
 }
 
+#family-background {
+    position: relative;
+    float:left;
+    width:100%;
+    
+}
+
 #serviceDescription {
+    position: absolute;
     background: rgba(255, 255, 255, 0.7);
     width: 40%;
     margin-top: 250px;
