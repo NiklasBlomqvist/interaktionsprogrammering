@@ -25,14 +25,13 @@ var MyDinnerView = function (container, model) {
         }
 
         container.find("#myDinnerTotalPrice").html("SEK " + model.getTotalMenuPrice());
+           
+    }
+
+    this.updatePending = function(dish) {
+        var pendingContent = "<table class='btnContent'><tr><td>" + "Pending" + "</td><td class='alignRight'>" + model.getDishPrice(dish.id) + "</td></tr></table>";
+        container.find("#myDinnerView-Extra").append("<button type='button' class='btn btn-primary btn-primary2'>" + pendingContent + "</button>");
         
-        /*
-        var tmp = model.getFullMenu(); 
-        
-        for(var i=0; i<tmp.length; i++) {
-            container.find("#placeForDish" + (i+1)).html(tmp[i].name);
-            container.find("#placeForDish" + (i+1) + "Price").html(model.getDishPrice(tmp[i].id));
-        } */      
     }
 	
 	this.show = function() {

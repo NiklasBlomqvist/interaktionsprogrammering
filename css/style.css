@@ -57,6 +57,11 @@ input[type=number]::-webkit-inner-spin-button {
     width: 90%;
     border-radius: 1px;
     border: 2px solid black;
+    color: black;
+}
+
+.btn-primary2 {
+    background-color: white;
 }
 
 .alignRight {

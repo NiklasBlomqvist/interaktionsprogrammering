@@ -28,7 +28,7 @@ $(function() {
     myDinnerView.show();
     selectDishView.show();
 	dishListView.show();
-	dishListView.update("main dish", "");
+
     */
     
     /*
@@ -38,9 +38,14 @@ $(function() {
     */ 
     
     // myDinnerView + dishDetailsView (LASAGNE)
+    model.addDishToMenu(1);
+
     myDinnerView.show();
     dishDetailsView.show();
+
     var dish = model.getDish(100);
+    
+    myDinnerView.updatePending(dish);
     dishDetailsView.update(dish);
     
 	
