@@ -43,7 +43,7 @@ $(function() {
     myDinnerView.show();
     dishDetailsView.show();
 
-    var dish = model.getDish(100);
+    var dish = model.getDish(1);
     
     myDinnerView.updatePending(dish);
     dishDetailsView.update(dish);
