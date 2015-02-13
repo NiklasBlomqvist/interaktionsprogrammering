@@ -15,9 +15,9 @@ $(function() {
 	var dinnerPreparationView = new DinnerPreparationView($("#dinnerPreparationView"), model);
 	
     // firstPageView
-    /*
+
     firstPageView.show();
-    */
+    
 
     //  myDinnerView + seletDishView + dishListView   
     /*
@@ -26,15 +26,6 @@ $(function() {
 	dishListView.show();
     dishListView.update("main dish", "");
 	//dishListView.update("dessert", "Strawberry");
-    */
-
-    // myDinnerView with 1 dish + selectDishView + dishListView
-    /*
-    model.addDishToMenu(1);
-    myDinnerView.show();
-    selectDishView.show();
-    dishListView.update("main dish", "");
-	dishListView.show();
     */
 
     // myDinnerView with 2 dishes + dishDetailsView (LASAGNE) pending state
@@ -51,13 +42,26 @@ $(function() {
     dishDetailsView.update(dish);
     */
 
-    // dinnerOverView    
-    
+    // myDinnerView with 1 dish + selectDishView + dishListView
+    /*
     model.addDishToMenu(1);
+    myDinnerView.show();
+    selectDishView.show();
+    dishListView.update("main dish", "");
+	dishListView.show();
+    */
+
+
+
+    // dinnerOverView with 3 dishes   
+    /*
+    model.addDishToMenu(1);
+    model.addDishToMenu(102);
+    model.addDishToMenu(201);
     dinnerOverviewTopView.show();
     dinnerOverviewView.show();
     dinnerOverviewView.update();
-    
+    */
 
     // dinnerPreparationView
     /*
