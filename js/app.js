@@ -20,7 +20,6 @@ $(function() {
 	
     //var exampleViewController = new ExampleViewController(exampleView,model);
 
-
     //var firstPageViewController = new firstPageViewController(firstPageView, model);
 
     // firstPageView
