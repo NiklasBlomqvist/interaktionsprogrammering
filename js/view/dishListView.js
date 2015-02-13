@@ -22,6 +22,7 @@ var DishListView = function (container, model) {
 	}
 	
 	this.show = function() {
+        this.update("main dish", "");
 	    container.show();	    
 	}
 	

@@ -1,10 +1,13 @@
 $(function() {
 	//We instantiate our model
 	var model = new DinnerModel();
+    
+    var stateController = new StateController(model);    
 	
 	//And create the needed controllers and views
 	//var exampleView = new ExampleView($("#exampleView"), model);
 	
+    /*
 	var firstPageView = new FirstPageView($("#firstPageView"), model);
 	var myDinnerView = new MyDinnerView($("#myDinnerView"), model);
 	var selectDishView = new SelectDishView($("#selectDishView"), model);
@@ -13,11 +16,17 @@ $(function() {
     var dinnerOverviewTopView = new DinnerOverviewTopView($("#dinnerOverviewView-top"), model);
 	var dinnerOverviewView = new DinnerOverviewView($("#dinnerOverviewView"), model);
 	var dinnerPreparationView = new DinnerPreparationView($("#dinnerPreparationView"), model);
+    */
 	
-    // firstPageView
+    //var exampleViewController = new ExampleViewController(exampleView,model);
 
+
+    //var firstPageViewController = new firstPageViewController(firstPageView, model);
+
+    // firstPageView
+    /*
     firstPageView.show();
-    
+    */  
 
     //  myDinnerView + seletDishView + dishListView   
     /*
