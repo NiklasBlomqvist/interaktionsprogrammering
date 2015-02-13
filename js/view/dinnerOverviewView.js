@@ -10,17 +10,24 @@ var DinnerOverviewView = function (container, model) {
 	        container.find("#chosen-starter-img").html("<img class='dishImages' src='images/" + starter.image + "'>");
 	        container.find("#chosen-starter").html(starter.name);
 	        container.find("#chosen-starter-price").html(model.getDishPrice(starter.id) + " SEK");
+	    } else {
+	        container.find("#firstDishContainer").hide();
 	    }
 	    
 	    if (typeof main != 'undefined') {	
 	        container.find("#chosen-main-img").html("<img class='dishImages' src='images/" + starter.image + "'>");
 	        container.find("#chosen-main").html(starter.name);
 	        container.find("#chosen-main-price").html(model.getDishPrice(starter.id) + " SEK");
+	    } else {
+	        container.find("#secondDishContainer").hide();
 	    }
+	    
 	    if (typeof dessert != 'undefined') {	
 	        container.find("#chosen-dessert-img").html("<img class='dishImages' src='images/" + starter.image + "'>");
 	        container.find("#chosen-dessert").html(starter.name);
 	        container.find("#chosen-dessert-price").html(model.getDishPrice(starter.id) + " SEK");
+	    } else {
+	        container.find("#thirdDishContainer").hide();
 	    }
 	    
 	    container.find("#total-price-td").html(model.getTotalMenuPrice() + " SEK");
@@ -28,7 +35,6 @@ var DinnerOverviewView = function (container, model) {
 	
 	this.show = function() {
 	    container.show();
-	    this.update();
 	}
 	
 	this.hide = function() {

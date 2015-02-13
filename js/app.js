@@ -52,15 +52,15 @@ $(function() {
     */
 
     // dinnerOverView    
-    /*
+    
+    model.addDishToMenu(1);
     dinnerOverviewTopView.show();
     dinnerOverviewView.show();
-    model.addDishToMenu(1);
     dinnerOverviewView.update();
-    */ 
+    
 
     // dinnerPreparationView
-    
+    /*
     model.addDishToMenu(1);
     model.addDishToMenu(101);
     model.addDishToMenu(200);
@@ -68,5 +68,5 @@ $(function() {
     dinnerOverviewTopView.show();
     
     dinnerPreparationView.show();
-	
+	*/
 });
