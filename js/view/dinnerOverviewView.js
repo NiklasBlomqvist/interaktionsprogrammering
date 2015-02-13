@@ -15,17 +15,17 @@ var DinnerOverviewView = function (container, model) {
 	    }
 	    
 	    if (typeof main != 'undefined') {	
-	        container.find("#chosen-main-img").html("<img class='dishImages' src='images/" + starter.image + "'>");
-	        container.find("#chosen-main").html(starter.name);
-	        container.find("#chosen-main-price").html(model.getDishPrice(starter.id) + " SEK");
+	        container.find("#chosen-main-img").html("<img class='dishImages' src='images/" + main.image + "'>");
+	        container.find("#chosen-main").html(main.name);
+	        container.find("#chosen-main-price").html(model.getDishPrice(main.id) + " SEK");
 	    } else {
 	        container.find("#secondDishContainer").hide();
 	    }
 	    
 	    if (typeof dessert != 'undefined') {	
-	        container.find("#chosen-dessert-img").html("<img class='dishImages' src='images/" + starter.image + "'>");
-	        container.find("#chosen-dessert").html(starter.name);
-	        container.find("#chosen-dessert-price").html(model.getDishPrice(starter.id) + " SEK");
+	        container.find("#chosen-dessert-img").html("<img class='dishImages' src='images/" + dessert.image + "'>");
+	        container.find("#chosen-dessert").html(dessert.name);
+	        container.find("#chosen-dessert-price").html(model.getDishPrice(dessert.id) + " SEK");
 	    } else {
 	        container.find("#thirdDishContainer").hide();
 	    }
