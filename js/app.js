@@ -62,6 +62,7 @@ $(function() {
     // dinnerPreparationView
     
     model.addDishToMenu(1);
+    model.addDishToMenu(101);
     model.addDishToMenu(200);
     
     dinnerOverviewTopView.show();

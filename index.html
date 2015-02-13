@@ -16,19 +16,6 @@
     <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
-    <script>
-    /* Dropdown - doesn't work flawlessly
-    $(function(){
-        $(".dropdown-menu li a").click(function(){
-            $(".btn:first-child").text($(this).text());
-            $(".btn:first-child").val($(this).text());
-
-
-        });
-    });*/
-    </script>
-
-
   </head>
   <body>
     <div id="header">
@@ -205,7 +192,7 @@
         <!-- DINNER PREPARATION VIEW -->
         <div id="dinnerPreparationView">
 			<table id="dinnerPreparationView-recipesTable">
-			    <tr id="starter-container">
+			    <tr id="starter-container" class="dinnerPreparationView-Padding">
 							    <td id="starterImage">
 							    </td>
 							    <td class="preparationViewText">
@@ -217,7 +204,7 @@
 								    <p id="starterPreparation"></p>
 							    </td>
 				</tr>
-				<tr id="main-container">
+				<tr id="main-container" class="dinnerPreparationView-Padding">
 							    <td id="mainImage">
 							    </td>
 							    <td class="preparationViewText">
@@ -229,7 +216,7 @@
 								    <p id="mainPreparation"></p>
 							    </td>
 				</tr>
-				<tr id="dessert-container">
+				<tr id="dessert-container" class="dinnerPreparationView-Padding">
 							    <td id="dessertImage">
 							    </td>
 							    <td class="preparationViewText">
@@ -244,22 +231,6 @@
 			</table>
         </div>
 
-
-
-
-
-
-
-		    <!--<h1>Dinner planner</h1>
-		    <div id="exampleView">
-			    <div>
-				    Number of guests: <span id="numberOfGuests"></span>
-			    </div>
-			    <div>
-                    <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
-				    <button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
-			    </div>
-		    </div>-->
 
 	</div>
 

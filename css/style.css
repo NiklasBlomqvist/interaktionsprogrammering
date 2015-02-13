@@ -419,4 +419,9 @@ div #myDinnerView {
 	padding-right: 30px;
 }
 
+.dinnerPreparationView-Padding td{
+    padding: 25px;
+}
+
+
 /*--------END preparationView-------*/
