@@ -13,6 +13,7 @@ var StateController = function(model) {
 	var dinnerPreparationView = new DinnerPreparationView($("#dinnerPreparationView"), model);
 
     var firstPageViewController = new FirstPageViewController(firstPageView, this);
+	var dinnerOverviewTopViewController = new DinnerOverviewTopViewController(dinnerOverviewTopView, this);
 
     firstPageView.show();
     visibleViews.push(firstPageView);
@@ -26,7 +27,7 @@ var StateController = function(model) {
 
         visibleViews = [];
 
-        if(clickedId === "createNewDinnerBtn") {
+        if(clickedId === "createNewDinnerBtn" || clickedId === "dinnerOverviewView-goBackButton") {
             visibleViews.push(myDinnerView);
             visibleViews.push(selectDishView);
             visibleViews.push(dishListView);
