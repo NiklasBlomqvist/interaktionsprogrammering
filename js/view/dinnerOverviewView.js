@@ -36,6 +36,7 @@ var DinnerOverviewView = function (container, model) {
 	}
 	
 	this.show = function() {
+		this.update();
 	    container.show();
 	}
 	

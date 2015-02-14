@@ -1,6 +1,8 @@
 //My Dinner View Object constructor
 var MyDinnerView = function (container, model) {
     
+	this.confirmBtn = container.find("#confirmDinner-btn");
+	
     this.update = function() {
 
         var starter = model.getSelectedDish("starter");
