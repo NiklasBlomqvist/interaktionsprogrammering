@@ -16,6 +16,7 @@ var StateController = function(model) {
 	var selectDishViewController = new SelectDishViewController(selectDishView, this);
 	var dishListViewController = new DishListViewController(dishListView, this);
 	var dinnerOverviewTopViewController = new DinnerOverviewTopViewController(dinnerOverviewTopView, this);
+	var dinnerOverviewViewController = new DinnerOverviewViewController(dinnerOverviewView, this);
 
     firstPageView.show();
     visibleViews.push(firstPageView);
@@ -33,6 +34,11 @@ var StateController = function(model) {
             visibleViews.push(myDinnerView);
             visibleViews.push(selectDishView);
             visibleViews.push(dishListView);
+        }
+		
+		if(clickedId === "#dinnerOverviewView-printButton") {
+            visibleViews.push(dinnerOverviewTopView);
+            visibleViews.push(dinnerPreparationView);
         }
         
         for(var i=0; i<visibleViews.length; i++) {

@@ -1,5 +1,7 @@
 //Dinner Overview View Object constructor
 var DinnerOverviewView = function (container, model) {
+
+	this.printBtn = container.find("#dinnerOverviewView-printButton");
 	
 	this.update = function() {
 	    var starter = model.getSelectedDish("starter");
