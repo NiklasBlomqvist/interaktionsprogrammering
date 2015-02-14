@@ -4,6 +4,8 @@ var DishListView = function (container, model) {
 	this.update = function(type, filter) {
 	    var dishes = model.getAllDishes(type, filter);
 	    
+		container.html("");
+		
 	    for (var i = 0; i < dishes.length; i++) {
 	        container.append("<div><table class='dishInTable'>" +
 	                            "<tr><td><table class='dishImageAndText'>" +

@@ -85,9 +85,9 @@
             <!-- Bootstrap Button -->
             <div class="col-lg-6">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Enter key words">
+                    <input type="text" class="form-control" placeholder="Enter key words" id="searchField">
                     <span class="input-group-btn">
-                        <button type="button" class="btn btn-danger">search</button>
+                        <button type="button" class="btn btn-danger" id="searchBtn">search</button>
                     </span>
                 </div><!-- /input-group -->
             </div><!-- /.col-lg-6 -->
@@ -184,7 +184,7 @@
 				</td></tr></table>
 				<hr />
 				<div>
-					<button id="dinnerOverviewView-button" class="btn btn-danger">Print Full Recipe</button>
+					<button id="dinnerOverviewView-printButton" class="btn btn-danger">Print Full Recipe</button>
 				</div>
 			</div>
         </div>
@@ -249,6 +249,8 @@
     <!-- State Controller -->
 	<script src="js/controller/stateController.js"></script>
     <!-- Controllers -->
+	<script src="js/controller/selectDishViewController.js"></script>
+	<script src="js/controller/dishListViewController.js"></script>
 	<script src="js/controller/firstPageViewController.js"></script>
 	<script src="js/controller/dinnerOverviewTopViewController.js"></script>
 	
