@@ -33,11 +33,21 @@ var DinnerModel = function() {
         this.type = type;
         notifyObservers();    
     }
+	
+	// Gets the current type of dish
+    this.getType = function() {
+		return this.type;
+    }
 
     // Sets the filter for the search function
     this.setFilter = function(filter) {
         this.filter = filter;
         notifyObservers();    
+    }
+	
+	// Sets the filter for the search function
+    this.getFilter = function() {
+        return this.filter;   
     }
 
 	//Set the currently pending dish
