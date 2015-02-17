@@ -3,10 +3,16 @@ var DinnerModel = function() {
  
 	// and selected dinner options for dinner menu
     this.numberOfGuests = 3;
+
     this.starter;
     this.mainDish;
     this.dessert;
+
 	this.pending;
+
+    // Default values for getAllDishes(type, filter)
+    this.type = "main dish";
+    this.filter = "";
 
     var observers = [];
 
@@ -20,6 +26,18 @@ var DinnerModel = function() {
         for(var i=0; i<observers.length; i++) {
             observers[i].update(obj);
         }
+    }
+
+    // Sets the current type of dish
+    this.setType = function(type) {
+        this.type = type;
+        notifyObservers();    
+    }
+
+    // Sets the filter for the search function
+    this.setFilter = function(filter) {
+        this.filter = filter;
+        notifyObservers();    
     }
 
 	//Set the currently pending dish
@@ -156,7 +174,7 @@ var DinnerModel = function() {
 	//function that returns all dishes of specific type (i.e. "starter", "main dish" or "dessert")
 	//you can use the filter argument to filter out the dish by name or ingredient (use for search)
 	//if you don't pass any filter all the dishes will be returned
-	this.getAllDishes = function (type,filter) {
+	this.getAllDishes = function (type, filter) {
 	  return $(dishes).filter(function(index,dish) {
 		var found = true;
 		if(filter){

@@ -1,8 +1,10 @@
 //Dish List View Object constructor
 var DishListView = function (container, model) {
+
+    model.addObserver(this);
 	
-	this.update = function(type, filter) {
-	    var dishes = model.getAllDishes(type, filter);
+	this.update = function() {
+	    var dishes = model.getAllDishes(model.type, model.filter);
 	    
 		container.html("");
 		
@@ -22,9 +24,9 @@ var DishListView = function (container, model) {
 	                        "</table></div>");
 	    }
 	}
+    
 	
 	this.show = function() {
-        this.update("main dish", "");
 	    container.show();	    
 	}
 	

@@ -1,6 +1,8 @@
 //Dish Details View Object constructor
 var DishDetailsView = function (container, model) {
 
+    model.addObserver(this);
+
     this.update = function(dish) {
         var guests = model.getNumberOfGuests();
     
