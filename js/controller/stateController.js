@@ -3,6 +3,7 @@ var StateController = function(model) {
     this.model = model;
     var visibleViews = [];
 
+    // Initialising all views
     var firstPageView = new FirstPageView($("#firstPageView"), model);
 	var myDinnerView = new MyDinnerView($("#myDinnerView"), model);
 	var selectDishView = new SelectDishView($("#selectDishView"), model);
@@ -12,6 +13,7 @@ var StateController = function(model) {
 	var dinnerOverviewView = new DinnerOverviewView($("#dinnerOverviewView"), model);
 	var dinnerPreparationView = new DinnerPreparationView($("#dinnerPreparationView"), model);
 
+    // Initialising all controllers
     var firstPageViewController = new FirstPageViewController(firstPageView, this);
 	var selectDishViewController = new SelectDishViewController(selectDishView, this);
 	var dishListViewController = new DishListViewController(dishListView, this);
