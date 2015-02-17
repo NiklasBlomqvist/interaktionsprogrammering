@@ -14,9 +14,8 @@ var DinnerModel = function() {
         observers.push(observer);
     }
 
-    // Notifies all observers or just some depending on the argument
+    // Notifies all observers
     var notifyObservers = function(obj) {
-        // Notifies all observers that the model has changed
         for(var i=0; i<observers.length; i++) {
             observers[i].update(obj);
         }
