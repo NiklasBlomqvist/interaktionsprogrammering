@@ -28,12 +28,15 @@ var StateController = function(model) {
 	//Hide and show views depending on button clicked
     this.changeState = function( clickedId ) {
 
+        // Hides all visible views and deletes them from the array
         for(var i=0; i<visibleViews.length; i++) {
             visibleViews[i].hide();
         }
 
         visibleViews = [];
 
+        
+        // Depending on the button clicked display the views intented and add them to the visible views array
         if(clickedId === "createNewDinnerBtn" || clickedId === "dinnerOverviewView-goBackButton") {
             visibleViews.push(myDinnerView);
             visibleViews.push(selectDishView);
