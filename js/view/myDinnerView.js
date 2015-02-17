@@ -10,7 +10,7 @@ var MyDinnerView = function (container, model) {
         var starter = model.getSelectedDish("starter");
         var main = model.getSelectedDish("main dish");
         var dessert = model.getSelectedDish("dessert");
-		var pending = model.pending;
+		var pending = model.getPending();
 
         if(typeof starter != 'undefined') {
             var starterContent = "<table class='btnContent'><tr><td>" + starter.name + "</td><td class='alignRight'>" + model.getDishPrice(starter.id) + "</td></tr></table>";
@@ -36,8 +36,7 @@ var MyDinnerView = function (container, model) {
     }
 	
 	this.show = function() {
-	    container.show();
-	    
+	    container.show();	    
 	}
 	
 	this.hide = function() {
