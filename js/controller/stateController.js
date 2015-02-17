@@ -19,6 +19,7 @@ var StateController = function(model) {
 	var dinnerOverviewViewController = new DinnerOverviewViewController(dinnerOverviewView, this);
 	var myDinnerViewController = new MyDinnerViewController(myDinnerView, this);
 
+    // Initialising the first page and add it to our array over visible views
     firstPageView.show();
     visibleViews.push(firstPageView);
 
