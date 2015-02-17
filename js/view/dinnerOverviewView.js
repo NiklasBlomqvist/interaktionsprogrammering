@@ -1,6 +1,8 @@
 //Dinner Overview View Object constructor
 var DinnerOverviewView = function (container, model) {
 
+	model.addObserver(this);
+
 	this.printBtn = container.find("#dinnerOverviewView-printButton");
 	
 	this.update = function() {
@@ -36,7 +38,6 @@ var DinnerOverviewView = function (container, model) {
 	}
 	
 	this.show = function() {
-		this.update();
 	    container.show();
 	}
 	
