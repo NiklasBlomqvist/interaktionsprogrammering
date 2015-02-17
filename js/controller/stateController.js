@@ -34,9 +34,10 @@ var StateController = function(model) {
         }
 
         visibleViews = [];
+      
+        /*  Depending on the button clicked, display the views intented and add them to the visible views array */ 
 
-        
-        // Depending on the button clicked, display the views intented and add them to the visible views array
+        // "Create new dinner"-button clicked on first page or "Go back and edit dinner"-button
         if(clickedId === "createNewDinnerBtn" || clickedId === "dinnerOverviewView-goBackButton") {
             visibleViews.push(myDinnerView);
             visibleViews.push(selectDishView);

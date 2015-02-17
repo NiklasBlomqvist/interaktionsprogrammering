@@ -47,7 +47,6 @@ var DishDetailsView = function (container, model) {
 
     }
    
-	
 	this.show = function() {
 	    container.show();
 	}
