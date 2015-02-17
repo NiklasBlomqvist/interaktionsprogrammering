@@ -3,8 +3,11 @@ var DishDetailsView = function (container, model) {
 
     model.addObserver(this);
 
-    this.update = function(dish) {
+    this.update = function() {
         var guests = model.getNumberOfGuests();
+
+        // Get the current dish
+        var dish = model.pending;
     
         container.append("<div id='dishDetailsView-Overview'>" + 
             "<h3><b>" + dish.name + "</b></h3>" + 
