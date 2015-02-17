@@ -4,8 +4,10 @@ var DishListView = function (container, model) {
     model.addObserver(this);
 	
 	this.update = function(obj) {
-	    var dishes = model.getAllDishes(model.type, model.filter);
-	    
+		var type = model.getType();
+		var filter = model.getFilter();
+		var dishes = dishes = model.getAllDishes(type, filter);
+
 		container.html("");
 		
 	    for (var i = 0; i < dishes.length; i++) {
