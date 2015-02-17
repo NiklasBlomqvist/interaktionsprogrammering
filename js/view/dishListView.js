@@ -3,7 +3,7 @@ var DishListView = function (container, model) {
 
     model.addObserver(this);
 	
-	this.update = function() {
+	this.update = function(obj) {
 	    var dishes = model.getAllDishes(model.type, model.filter);
 	    
 		container.html("");
