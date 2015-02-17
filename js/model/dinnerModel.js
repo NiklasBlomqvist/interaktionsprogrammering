@@ -6,6 +6,7 @@ var DinnerModel = function() {
     this.starter;
     this.mainDish;
     this.dessert;
+	this.pending;
 
     this.observers = [];
 
@@ -21,6 +22,15 @@ var DinnerModel = function() {
         }
     }
 
+	//Set the currently pending dish
+	this.setPending(dish) {
+		this.pending = dish;
+	}
+	
+	//Get the currently pending dish
+	this.getPending() {
+		return this.pending;
+	}
 
 	this.setNumberOfGuests = function(num) {
         this.numberOfGuests = num;
