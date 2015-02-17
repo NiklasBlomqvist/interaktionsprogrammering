@@ -36,8 +36,7 @@ var MyDinnerView = function (container, model) {
     }
 	
 	this.show = function() {
-	    container.show();
-	    
+	    container.show();	    
 	}
 	
 	this.hide = function() {

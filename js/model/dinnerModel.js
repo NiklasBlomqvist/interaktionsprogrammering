@@ -8,7 +8,7 @@ var DinnerModel = function() {
     this.dessert;
 	this.pending;
 
-    this.observers = [];
+    var observers = [];
 
     // Adds an observer to the observer array
     this.addObserver = function(observer) {
@@ -23,12 +23,12 @@ var DinnerModel = function() {
     }
 
 	//Set the currently pending dish
-	this.setPending(dish) {
+	this.setPending = function(dish) {
 		this.pending = dish;
 	}
 	
 	//Get the currently pending dish
-	this.getPending() {
+	this.getPending = function() {
 		return this.pending;
 	}
 
