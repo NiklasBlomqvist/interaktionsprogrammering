@@ -58,11 +58,4 @@ var StateController = function(model) {
             visibleViews[i].show();
         }        
     }
-
-	this.updateView = function(clickedId, values) {
-		if (clickedId === "searchBtn") {
-			//TODO: After having implemented the TODO in selectDishViewController.js, change "main dish" to values[1]
-			dishListViewController.update("main dish", values[0]);
-		}
-	}
 }
