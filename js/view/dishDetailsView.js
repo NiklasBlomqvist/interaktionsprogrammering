@@ -3,7 +3,7 @@ var DishDetailsView = function (container, model) {
 
     model.addObserver(this);
 
-    this.update = function() {
+    this.update = function(obj) {
         var guests = model.getNumberOfGuests();
 
         // Get the current dish

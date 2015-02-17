@@ -5,7 +5,7 @@ var MyDinnerView = function (container, model) {
     
 	this.confirmBtn = container.find("#confirmDinner-btn");
 	
-    this.update = function() {
+    this.update = function(obj) {
 
         var starter = model.getSelectedDish("starter");
         var main = model.getSelectedDish("main dish");
