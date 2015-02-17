@@ -1,7 +1,5 @@
 //Dinner Preparation View Object constructor
 var DinnerPreparationView = function (container, model) {
-
-	model.addObservable(this);
 	
 	this.update = function() {
 	    var starter = model.getSelectedDish("starter");
@@ -38,6 +36,7 @@ var DinnerPreparationView = function (container, model) {
 	
 	this.show = function() {
 	    container.show();
+	    this.update();
 	}
 	
 	this.hide = function() {
