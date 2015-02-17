@@ -5,7 +5,7 @@ var DinnerOverviewView = function (container, model) {
 
 	this.printBtn = container.find("#dinnerOverviewView-printButton");
 	
-	this.update = function() {
+	this.update = function(obj) {
 	    var starter = model.getSelectedDish("starter");
 	    var main = model.getSelectedDish("main dish");
 	    var dessert = model.getSelectedDish("dessert");

@@ -3,7 +3,7 @@ var DinnerPreparationView = function (container, model) {
 	
 	model.addObserver(this);
 	
-	this.update = function() {
+	this.update = function(obj) {
 	    var starter = model.getSelectedDish("starter");
 	    var main = model.getSelectedDish("main dish");
 	    var dessert = model.getSelectedDish("dessert");
