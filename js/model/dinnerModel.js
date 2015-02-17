@@ -25,6 +25,7 @@ var DinnerModel = function() {
 	//Set the currently pending dish
 	this.setPending = function(dish) {
 		this.pending = dish;
+        notifyObservers();
 	}
 	
 	//Get the currently pending dish
