@@ -7,9 +7,28 @@ var DinnerModel = function() {
     this.mainDish;
     this.dessert;
 
+    this.observers = [];
+
+    // Adds an observer to the observer array
+    this.addObserver = function(observer) {
+        observers.push(observer);
+    }
+
+    // Notifies all observers or just some depending on the argument
+    var notifyObservers = function(obj) {
+    
+        // If obj is not specified, notify all observers
+        if(typeof obj == 'undefined') {
+            for(var i=0; i<observers.length; i++) {
+                observers[i].update();
+            }
+        } 
+    }
+
 
 	this.setNumberOfGuests = function(num) {
         this.numberOfGuests = num;
+        notifyObservers();
 	}
 
 	// should return 
@@ -107,6 +126,8 @@ var DinnerModel = function() {
             this.dessert = currentDish;
         }
 
+        notifyObservers();
+
 	}
 
 	//Removes dish from menu
@@ -120,6 +141,8 @@ var DinnerModel = function() {
         } else if (currentDish.type === "dessert") {
             this.dessert = null;    
         }
+
+        notifyObservers();
 
 	}
 
