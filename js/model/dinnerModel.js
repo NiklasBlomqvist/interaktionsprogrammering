@@ -16,13 +16,10 @@ var DinnerModel = function() {
 
     // Notifies all observers or just some depending on the argument
     var notifyObservers = function(obj) {
-    
-        // If obj is not specified, notify all observers
-        if(typeof obj == 'undefined') {
-            for(var i=0; i<observers.length; i++) {
-                observers[i].update();
-            }
-        } 
+        // Notifies all observers that the model has changed
+        for(var i=0; i<observers.length; i++) {
+            observers[i].update(obj);
+        }
     }
 
 
