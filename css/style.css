@@ -234,8 +234,10 @@ div #myDinnerView {
 
 	margin-left: 20px;
 	margin-right: 20px;
-    margin-top: 35px
+    margin-top: 35px;
     
+	cursor: pointer;
+	cursor: hand;
 }
 
 .dishImageAndText {
