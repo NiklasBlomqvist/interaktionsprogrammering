@@ -51,7 +51,8 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .btn-primary {
-    margin: 5%;
+    margin-top: 3%;
+    margin-left: 5%;
     width: 90%;
     border-radius: 1px;
     border: 2px solid black;
@@ -59,7 +60,8 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .btn-info {
-    margin: 5%;
+    margin-top: 3%;
+    margin-left: 5%;
     width: 90%;
     border-radius: 1px;
     border: 2px solid black;
@@ -104,14 +106,13 @@ div #myDinnerView {
     width: 20%;
     float: left;
 
-    min-height: 500px;
+    height: 500px;
 }
 
 .removeDishBtn {
-    float: top;
     position: relative;
     left: 91%;
-    top: -22px;
+    top: -9px;
 }
 
 .borderAround {
@@ -136,10 +137,6 @@ div #myDinnerView {
     padding-right: 15px;
 }
 
-#myDinnerView-Dishes {
-
-}
-
 #myDinnerView-Bottom {
     width:100%;
     
@@ -148,6 +145,7 @@ div #myDinnerView {
 #myDinnerView-Bottom td {
     padding-right: 15px;
     padding-left: 15px;
+    padding-top: 5px;
 }
 
 .btnContent {
