@@ -11,7 +11,7 @@ var DinnerModel = function() {
 	this.pending;
 
     // Default values for getAllDishes(type, filter)
-    this.type = "main dish";
+    this.type = "starter";
     this.filter = "";
 
     var observers = [];

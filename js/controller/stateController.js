@@ -24,6 +24,7 @@ var StateController = function(model) {
     // Initialising the first page and add it to our array over visible views
     firstPageView.show();
     visibleViews.push(firstPageView);
+	model.setType("starter"); // A bit of fulhack to force dinner list update
 
 	//Hide and show views depending on button clicked
     this.changeState = function( clickedId ) {
