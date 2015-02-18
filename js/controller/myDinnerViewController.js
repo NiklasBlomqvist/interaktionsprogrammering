@@ -8,6 +8,20 @@ var MyDinnerViewController = function(view, controller) {
         controller.changeState(view.confirmBtn[0].id);
     });
 
+    view.viewContainer.on("click", "#removeStarter", function() {
+        controller.model.removeDishFromMenu(controller.model.starter.id);
+    });
+
+    view.viewContainer.on("click", "#removeMain", function() {
+        controller.model.removeDishFromMenu(controller.model.mainDish.id);
+    });
+
+    view.viewContainer.on("click", "#removeDessert", function() {
+        controller.model.removeDishFromMenu(controller.model.dessert.id);
+    });
+
+
+
     // If someone clicks on the starter dish
 	view.viewContainer.on("click", "#starterBtn", function() {
         controller.model.setPending(controller.model.starter);
@@ -25,5 +39,9 @@ var MyDinnerViewController = function(view, controller) {
         controller.model.setPending(controller.model.dessert);
         controller.changeState("dishBtn");
 	});
+
+    /* Removes the starter, main dish or dessert if the "x"-button is clicked*/
+
+
 
 }

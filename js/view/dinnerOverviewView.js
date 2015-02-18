@@ -9,7 +9,7 @@ var DinnerOverviewView = function (container, model) {
 	    var starter = model.getSelectedDish("starter");
 	    var main = model.getSelectedDish("main dish");
 	    var dessert = model.getSelectedDish("dessert");
-	    
+
 	    if (typeof starter != 'undefined') {	    
 	        container.find("#chosen-starter-img").html("<img class='dishImages' src='images/" + starter.image + "'>");
 	        container.find("#chosen-starter").html(starter.name);

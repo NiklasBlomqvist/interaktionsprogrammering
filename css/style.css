@@ -107,6 +107,15 @@ div #myDinnerView {
     min-height: 500px;
 }
 
+.btn-warning {
+    position: relative;
+    top: -30px;
+    left: 230px;
+    background-color: red;
+    border-color: black;
+
+}
+
 .borderAround {
     border: 1px solid black;
 }

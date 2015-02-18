@@ -170,11 +170,11 @@ var DinnerModel = function() {
 		var currentDish = this.getDish(id);
 
         if(currentDish.type === "starter") {
-            this.starter = null;
+            this.starter = undefined;
         } else if (currentDish.type === "main dish") {
-            this.mainDish = null;
+            this.mainDish = undefined;
         } else if (currentDish.type === "dessert") {
-            this.dessert = null;    
+            this.dessert = undefined;    
         }
 
         notifyObservers();
