@@ -5,6 +5,7 @@ var MyDinnerViewController = function(view, controller) {
     });
 
     view.confirmBtn.click(function() {
+        controller.model.setPending();
         controller.changeState(view.confirmBtn[0].id);
     });
 

@@ -1,6 +1,7 @@
 var DishDetailsViewController = function(view, controller) {
 
 	view.viewContainer.on("click", "#backToSelectDishBtn", function() {
+        controller.model.setPending();
         controller.changeState("backToSelectDishBtn");
 	});
 
