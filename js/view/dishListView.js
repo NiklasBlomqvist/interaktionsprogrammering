@@ -7,7 +7,7 @@ var DishListView = function (container, model) {
 	this.update = function(obj) {
 		var type = model.getType();
 		var filter = model.getFilter();
-		var dishes = dishes = model.getAllDishes(type, filter);
+		var dishes = model.getAllDishes(type, filter);
 
 		container.html("");
 		
