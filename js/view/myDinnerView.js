@@ -19,15 +19,15 @@ var MyDinnerView = function (container, model) {
 
         if(typeof starter != 'undefined') {
             var starterContent = "<table class='btnContent'><tr><td>" + starter.name + "</td><td class='alignRight'>" + model.getDishPrice(starter.id) + "</td></tr></table>";
-            container.find("#myDinnerView-Dishes").append("<button id='starterBtn' button type='button' class='btn btn-primary'>" + starterContent + "</button>" + "<button id='removeStarter' class='btn btn-warning'>X</button>");
+            container.find("#myDinnerView-Dishes").append("<button id='starterBtn' button type='button' class='btn btn-primary'>" + starterContent + "</button>" + "<input type='image' id='removeStarter' class='removeDishBtn' src='images/kryss.png' width='15' height='15'>");
         }
         if(typeof main != 'undefined') {
             var mainContent = "<table class='btnContent'><tr><td>" + main.name + "</td><td class='alignRight'>" + model.getDishPrice(main.id) + "</td></tr></table>";
-            container.find("#myDinnerView-Dishes").append("<button id='mainBtn' button class='btn btn-primary'>" + mainContent + "</button>" + "<button id='removeMain' class='btn btn-warning'>X</button>");
+            container.find("#myDinnerView-Dishes").append("<button id='mainBtn' button class='btn btn-primary'>" + mainContent + "</button>" + "<input type='image' id='removeMain' class='removeDishBtn' src='images/kryss.png' width='15' height='15'>");
         }
         if(typeof dessert != 'undefined') {
             var dessertContent = "<table class='btnContent'><tr><td>" + dessert.name + "</td><td class='alignRight'>" + model.getDishPrice(dessert.id) + "</td></tr></table>";
-            container.find("#myDinnerView-Dishes").append("<button id ='dessertBtn' button class='btn btn-primary'>" + dessertContent + "</button>" + "<button id='removeDessert' class='btn btn-warning'>X</button>");
+            container.find("#myDinnerView-Dishes").append("<button id ='dessertBtn' button class='btn btn-primary'>" + dessertContent + "</button>" + "<input type='image' id='removeDessert' class='removeDishBtn' src='images/kryss.png' width='15' height='15'>");
         }
 		if (typeof pending != 'undefined') {
 			container.find("#myDinnerView-Pending").html("");
