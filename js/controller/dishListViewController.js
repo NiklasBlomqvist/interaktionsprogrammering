@@ -1,7 +1,7 @@
 var DishListViewController = function(view, controller) {
 
-this.update = function(type, filter) {
-	view.update(type, filter);
-};
-
+	view.viewContainer.on("click", ".dishInTable", function() {
+		controller.model.setPending(controller.model.getDish(this.id));
+		controller.changeState("dishInTable");
+	});
 }

@@ -2,6 +2,7 @@
 var DishListView = function (container, model) {
 
     model.addObserver(this);
+	this.viewContainer = container;
 	
 	this.update = function(obj) {
 		var type = model.getType();
@@ -11,7 +12,7 @@ var DishListView = function (container, model) {
 		container.html("");
 		
 	    for (var i = 0; i < dishes.length; i++) {
-	        container.append("<div><table class='dishInTable'>" +
+	        container.append("<div><table class='dishInTable' id='" + dishes[i].id + "'>" +
 	                            "<tr><td><table class='dishImageAndText'>" +
 	                                "<tr><td>" +
 	                                    "<img class='dishImages' src='images/" + dishes[i].image + "'>" +

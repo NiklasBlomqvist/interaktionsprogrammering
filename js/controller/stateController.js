@@ -53,6 +53,11 @@ var StateController = function(model) {
             visibleViews.push(dinnerOverviewTopView);
             visibleViews.push(dinnerOverviewView);
         }
+		
+		if(clickedId === "dishInTable") {
+			visibleViews.push(myDinnerView);
+            visibleViews.push(dishDetailsView);
+        }
         
         for(var i=0; i<visibleViews.length; i++) {
             visibleViews[i].show();
