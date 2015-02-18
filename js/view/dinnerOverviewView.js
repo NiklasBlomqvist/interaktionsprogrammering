@@ -26,6 +26,8 @@ var DinnerOverviewView = function (container, model) {
 							    model.getDishPrice(starter.id) + " SEK" +
 							"</td>" +
 						"</tr>");
+	    } else {
+	        container.find("#firstDishContainer").html("");
 	    }
 	    
 	    if (typeof main != 'undefined') {	    
@@ -44,6 +46,8 @@ var DinnerOverviewView = function (container, model) {
 							    model.getDishPrice(main.id) + " SEK" +
 							"</td>" +
 						"</tr>");
+	    } else {
+	        container.find("#secondDishContainer").html("");
 	    }
 	    
 	    if (typeof dessert != 'undefined') {	    
@@ -62,6 +66,8 @@ var DinnerOverviewView = function (container, model) {
 							    model.getDishPrice(dessert.id) + " SEK" +
 							"</td>" +
 						"</tr>");
+	    } else {
+	        container.find("#thirdDishContainer").html("");
 	    }
 	    
 	    container.find("#total-price-td").html(model.getTotalMenuPrice() + " SEK");

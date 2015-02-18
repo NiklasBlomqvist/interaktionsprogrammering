@@ -20,6 +20,8 @@ var DinnerPreparationView = function (container, model) {
 					    "<h3>Preparation</h3>" +
 					    "<p id='starterPreparation'>" + starter.description + "</p>" +
 				    "</td>");
+	    } else {
+	        container.find("#starter-container").html("");
 	    }
 	    
 	    if (typeof main != 'undefined') {	    
@@ -34,6 +36,8 @@ var DinnerPreparationView = function (container, model) {
 					    "<h3>Preparation</h3>" +
 					    "<p id='mainPreparation'>" + main.description + "</p>" +
 				    "</td>");
+	    } else {
+	        container.find("#main-container").html("");
 	    }
 	    
 	    if (typeof dessert != 'undefined') {	    
@@ -48,6 +52,8 @@ var DinnerPreparationView = function (container, model) {
 					    "<h3>Preparation</h3>" +
 					    "<p id='dessertPreparation'>" + dessert.description + "</p>" +
 				    "</td>");
+	    } else {
+	        container.find("#dessert-container").html("");
 	    }
 	}
 	
