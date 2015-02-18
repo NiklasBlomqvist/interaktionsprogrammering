@@ -20,6 +20,7 @@ var StateController = function(model) {
 	var dinnerOverviewTopViewController = new DinnerOverviewTopViewController(dinnerOverviewTopView, this);
 	var dinnerOverviewViewController = new DinnerOverviewViewController(dinnerOverviewView, this);
 	var myDinnerViewController = new MyDinnerViewController(myDinnerView, this);
+    var dishDetailsViewController = new DishDetailsViewController(dishDetailsView, this);
 
     // Initialising the first page and add it to our array over visible views
     firstPageView.show();
@@ -38,28 +39,32 @@ var StateController = function(model) {
       
         /*  Depending on the button clicked, display the views intented and add them to the visible views array */ 
 
-        // "Create new dinner"-button clicked on first page or "Go back and edit dinner"-button
-        if(clickedId === "createNewDinnerBtn" || clickedId === "dinnerOverviewView-goBackButton") {
+        // "Create new dinner"-button clicked, "Go back and edit dinner"-button clicked, "Back to Select Dish"-button clicked
+        if(clickedId === "createNewDinnerBtn" || clickedId === "dinnerOverviewView-goBackButton" || clickedId === "backToSelectDishBtn") {
             visibleViews.push(myDinnerView);
             visibleViews.push(selectDishView);
             visibleViews.push(dishListView);
         }
 		
+        // "Print full recipe"-button clicked
 		if(clickedId === "dinnerOverviewView-printButton") {
             visibleViews.push(dinnerOverviewTopView);
             visibleViews.push(dinnerPreparationView);
         }
 		
+        // "Confirm dinner"-button clicked from myDinnerView
 		if(clickedId === "confirmDinner-btn") {
             visibleViews.push(dinnerOverviewTopView);
             visibleViews.push(dinnerOverviewView);
         }
 		
-		if(clickedId === "dishInTable") {
+        // A dish-image clicked in dishDetailsView or a dish in myDinnerView
+		if(clickedId === "dishInTable" || clickedId === "dishBtn") {
 			visibleViews.push(myDinnerView);
             visibleViews.push(dishDetailsView);
         }
         
+        // Show all the newly pushed views
         for(var i=0; i<visibleViews.length; i++) {
             visibleViews[i].show();
         }        

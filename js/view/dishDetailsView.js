@@ -2,6 +2,8 @@
 var DishDetailsView = function (container, model) {
 
     model.addObserver(this);
+    
+	this.viewContainer = container;
 
     this.update = function(obj) {
         var guests = model.getNumberOfGuests();
@@ -10,11 +12,11 @@ var DishDetailsView = function (container, model) {
         var dish = model.pending;
     
 		if (typeof dish != 'undefined') {
-			container.append("<div id='dishDetailsView-Overview'>" + 
+			container.html("<div id='dishDetailsView-Overview'>" + 
 				"<h3><b>" + dish.name + "</b></h3>" + 
 				"<img id='dishDetailsView-Dish' src='images/" + dish.image + "'>" + 
 				"<p>" + dish.description + "</p>" +
-				"<button class='btn btn-danger'>" + "Back to Select Dish" + "</button>" + 
+				"<button id='backToSelectDishBtn' button class='btn btn-danger'>" + "Back to Select Dish" + "</button>" + 
 				"<h3><b>" + "Preparation" + "</b></h3>" + 
 				"<p>" + dish.description + "</p>");
 			
@@ -37,10 +39,11 @@ var DishDetailsView = function (container, model) {
 			}
 
 			ingredientList += "<tr><td class='noPaddingBottom' colspan='4'>" + "<hr>" + "</td></tr>"; 
-			ingredientList += "<tr><td colspan='2'>" + "<button class='btn btn-danger'>" + "Confirm Dish" + "</button>" + "</td>";
+			ingredientList += "<tr><td colspan='2'>" + "<button id='confirmDish' button class='btn btn-danger'>" + "Confirm Dish" + "</button>" + "</td>";
 			ingredientList += "<td>SEK</td><td>" + model.getDishPrice(dish.id) + "</td></tr>";
      
-			ingredientList += "</table></div">
+			ingredientList += "</table></div>";
+
 			container.append(ingredientList);
 		}
     }
