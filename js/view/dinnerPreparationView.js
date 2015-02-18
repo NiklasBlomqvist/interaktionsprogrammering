@@ -9,30 +9,45 @@ var DinnerPreparationView = function (container, model) {
 	    var dessert = model.getSelectedDish("dessert");
 	    
 	    if (typeof starter != 'undefined') {	    
-	        container.find("#starterImage").html("<img class='dishImages borderImage' src='images/" + starter.image + "'>");
-	        container.find("#starterName").html(starter.name);
-	        container.find("#starterDescription").html(starter.description);
-	        container.find("#starterPreparation").html(starter.description);
-	    } else {
-	        container.find("#starter-container").hide();
+	        container.find("#starter-container").html("<td id='starterImage'>" + 
+	                    "<img class='dishImages borderImage' src='images/" + starter.image + "'>" +
+				    "</td>" +
+				    "<td class='preparationViewText'>" +
+					    "<h3 id='starterName'>" + starter.name + "</h3>" +
+					    "<p id='starterDescription'>" + starter.description +"</p>" +
+				    "</td>" +
+				    "<td class='preparationViewText'>" +
+					    "<h3>Preparation</h3>" +
+					    "<p id='starterPreparation'>" + starter.description + "</p>" +
+				    "</td>");
 	    }
 	    
 	    if (typeof main != 'undefined') {	    
-	        container.find("#mainImage").html("<img class='dishImages borderImage' src='images/" + main.image + "'>");
-	        container.find("#mainName").html(main.name);
-	        container.find("#mainDescription").html(main.description);
-	        container.find("#mainPreparation").html(main.description);
-	    } else {
-	        container.find("#main-container").hide();
+	        container.find("#main-container").html("<td id='mainImage'>" + 
+	                    "<img class='dishImages borderImage' src='images/" + main.image + "'>" +
+				    "</td>" +
+				    "<td class='preparationViewText'>" +
+					    "<h3 id='mainName'>" + main.name + "</h3>" +
+					    "<p id='mainDescription'>" + main.description +"</p>" +
+				    "</td>" +
+				    "<td class='preparationViewText'>" +
+					    "<h3>Preparation</h3>" +
+					    "<p id='mainPreparation'>" + main.description + "</p>" +
+				    "</td>");
 	    }
 	    
 	    if (typeof dessert != 'undefined') {	    
-	        container.find("#dessertImage").html("<img class='dishImages borderImage' src='images/" + dessert.image + "'>");
-	        container.find("#dessertName").html(dessert.name);
-	        container.find("#dessertDescription").html(dessert.description);
-	        container.find("#dessertPreparation").html(dessert.description);
-	    } else {
-	        container.find("#dessert-container").hide();
+	        container.find("#dessert-container").html("<td id='dessertImage'>" + 
+	                    "<img class='dishImages borderImage' src='images/" + dessert.image + "'>" +
+				    "</td>" +
+				    "<td class='preparationViewText'>" +
+					    "<h3 id='dessertName'>" + dessert.name + "</h3>" +
+					    "<p id='dessertDescription'>" + dessert.description +"</p>" +
+				    "</td>" +
+				    "<td class='preparationViewText'>" +
+					    "<h3>Preparation</h3>" +
+					    "<p id='dessertPreparation'>" + dessert.description + "</p>" +
+				    "</td>");
 	    }
 	}
 	
