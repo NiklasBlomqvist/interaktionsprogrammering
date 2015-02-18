@@ -193,6 +193,10 @@ div #myDinnerView {
 
 }
 
+#searchBtn {
+    margin-top: -1px;
+}
+
 /*---------END selectDishView---------*/
 
 
