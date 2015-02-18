@@ -109,8 +109,8 @@ div #myDinnerView {
 
 .btn-warning {
     position: relative;
-    top: -30px;
-    left: 230px;
+    left: 90%;
+    bottom: 100%;
     background-color: red;
     border-color: black;
 
