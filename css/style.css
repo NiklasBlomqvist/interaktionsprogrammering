@@ -18,7 +18,7 @@ body {
     padding-right: 15px;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #D1E0E0;
+    background-color: #6B90D4;
     border: 2px solid black;
 }
 
@@ -44,7 +44,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 .btn-danger {
     color: black;
-    background-color: #FF9F5F;
+    background-color: #FF7A00;
     border-color: black;
     box-shadow: 2px 3px 0 0 black;
     border-radius: 2px;
@@ -66,6 +66,7 @@ input[type=number]::-webkit-inner-spin-button {
     border-radius: 1px;
     border: 2px solid black;
     color: black;
+
 }
 
 .alignRight {
@@ -157,7 +158,7 @@ div #myDinnerView {
 #doubleBorderRow {
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
-    background-color: #C8D6E3;
+    background-color: #6C8DD5;
 }
 
 #addedDishes {
@@ -191,7 +192,7 @@ div #myDinnerView {
     padding: 20px;
     margin-left: 20%;
     height: 150px;
-    background-color: #FFFF83;
+    background-color: #FFD940;
 
 }
 
@@ -233,7 +234,7 @@ div #myDinnerView {
 }
 
 .dishName {
-    background-color: #C8D6E3;
+    background-color: #6C8DD5;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
@@ -292,7 +293,7 @@ div #myDinnerView {
 }
 
 #dishDetailsView-Ingredients{
-    background-color: #FFFF83;
+    background-color: #FFD940;
     border-bottom: 1px solid black;
 
 }
@@ -335,7 +336,7 @@ div #myDinnerView {
     padding-right: 15px;
     padding-top: 20px;
     padding-bottom: 50px;
-	background-color: #FFE066;
+	background-color: #FFD940;
     border: 1px solid black;
     border-top: none;
 
