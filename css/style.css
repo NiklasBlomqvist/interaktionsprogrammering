@@ -51,18 +51,18 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .btn-primary {
-    margin-top: 3%;
-    margin-left: 5%;
-    width: 90%;
+    margin-top: 5%;
+    margin-left: 10%; 
+    width: 80%;
     border-radius: 1px;
     border: 2px solid black;
     color: black;
 }
 
 .btn-info {
-    margin-top: 3%;
-    margin-left: 5%;
-    width: 90%;
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 80%;
     border-radius: 1px;
     border: 2px solid black;
     color: black;
@@ -99,6 +99,8 @@ div #firstPageView {
 /*---------START mydinnerView---------*/
 
 div #myDinnerView {
+
+    position: relative;
     display: none;
 
     border: 2px solid black;
@@ -111,8 +113,8 @@ div #myDinnerView {
 
 .removeDishBtn {
     position: relative;
-    left: 91%;
-    top: -9px;
+    left: -10px;
+    top: 25px;
 }
 
 .borderAround {
